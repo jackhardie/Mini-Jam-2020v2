@@ -58,8 +58,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
+        public void SetRunSpeed(float speedAmount) {
+            m_RunSpeed = speedAmount;
+        } 
 
-        // Update is called once per frame
         private void Update()
         {
             RotateView();
