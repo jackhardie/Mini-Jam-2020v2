@@ -14,18 +14,17 @@ public class LightCheck : MonoBehaviour
     void Update()
     {
         sum = 0;
-        foreach(RenderTexture lightCheck in lightCheckTextures)
+        foreach (RenderTexture lightCheck in lightCheckTextures)
         {
             sum += CheckLightLevel(lightCheck);
         }
 
-        
+        print(realLightLevel);
         realLightLevel = Mathf.RoundToInt(sum);
-        if (realLightLevel <= 10)
+        if (realLightLevel <= 5)
         {
             realLightLevel = 0;
         }
-        print(realLightLevel);
     }
 
 

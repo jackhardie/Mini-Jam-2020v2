@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FlashLight : MonoBehaviour {
-    bool turnOnOff = false;
+    public bool turnOnOff = false;
     [SerializeField]
     GameObject fakeLights;
     void Update() {
