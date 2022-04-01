@@ -28,6 +28,12 @@ public class SceneHandler : MonoBehaviour {
         SceneManager.LoadScene("TutorialLevel");
     }
 
+    public void RestartLevel() {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //Maybe reset stamina, mental illness, battery
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
     public void QuitGame() {
         Application.Quit();
     }
