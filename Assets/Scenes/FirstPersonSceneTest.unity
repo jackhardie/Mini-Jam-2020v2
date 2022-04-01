@@ -190,6 +190,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182994339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1860345901619808122, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 1176823068}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &458273486
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +493,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &841447167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1860345901619797814, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 1176823068}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036662360
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +603,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1860345901625669290, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901625685916, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901625889346, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -641,6 +663,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: spotLightCookieOne
+      value: 
+      objectReference: {fileID: 1389506668}
+    - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: spotLightCookieTwo
+      value: 
+      objectReference: {fileID: 182994339}
+    - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: spotLightCookieThree
+      value: 
+      objectReference: {fileID: 841447167}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
 --- !u!224 &1189053688 stripped
@@ -750,6 +784,11 @@ Transform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8190395545494057823, guid: cf8a68058f59cc6488dcdc912c2ffee3, type: 3}
   m_PrefabInstance: {fileID: 8190395546836339877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389506668 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1860345901619619234, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 1176823068}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1817348789
 PrefabInstance:

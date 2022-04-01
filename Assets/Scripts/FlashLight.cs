@@ -1,18 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FlashLight : MonoBehaviour {
     public bool turnOnOff = false;
-    [SerializeField]
-    GameObject fakeLights;
+    [SerializeField] GameObject fakeLights;
+    [SerializeField] GameObject spotLightCookieOne;
+    [SerializeField] GameObject spotLightCookieTwo;
+    [SerializeField] GameObject spotLightCookieThree;
+    [SerializeField] float rangeDecrease = 0.1f;
+    [SerializeField] float spotAnglerangeDecrease = 1f;
+    [SerializeField] float intensityrangeDecrease = 0.01f;
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
             turnOnOff = !turnOnOff;
-            this.gameObject.transform.GetChild(1).gameObject.SetActive(turnOnOff);
-            this.gameObject.transform.GetChild(2).gameObject.SetActive(turnOnOff);
-            this.gameObject.transform.GetChild(3).gameObject.SetActive(turnOnOff);
+            spotLightCookieOne.SetActive(turnOnOff);
+            spotLightCookieTwo.SetActive(turnOnOff);
+            spotLightCookieThree.SetActive(turnOnOff);
+          
             fakeLights.SetActive(turnOnOff);
         }
+        if (turnOnOff) {
+            DecreaseLight(spotLightCookieOne);
+            DecreaseLight(spotLightCookieTwo);
+            DecreaseLight(spotLightCookieThree);
+        }
+    }
+
+    private void DecreaseLight(GameObject spotLightCookie) {
+        spotLightCookie.GetComponent<Light>().range -= rangeDecrease * Time.deltaTime;
+        spotLightCookie.GetComponent<Light>().spotAngle -= spotAnglerangeDecrease * Time.deltaTime;
+        spotLightCookie.GetComponent<Light>().intensity -= intensityrangeDecrease * Time.deltaTime;
     }
 }
