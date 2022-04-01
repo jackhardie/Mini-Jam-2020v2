@@ -59,6 +59,7 @@ public class TutorialScriptedEvent : MonoBehaviour
         fpsController.enabled = false;
         playerMoving = true;
         yield return new WaitForSeconds(2f);
+        playerMoving = false;
         mirroredPlayer.SetActive(true);
         yield return new WaitForSeconds(2f);
         LightsOff();
@@ -70,6 +71,7 @@ public class TutorialScriptedEvent : MonoBehaviour
         ForceFlashlightOff();
         yield return new WaitForSeconds(1f);
         LightsOn();
+        Destroy(this);
     }
 
     void LockPlayerPosition()
