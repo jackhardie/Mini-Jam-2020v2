@@ -34,18 +34,6 @@ public class TutorialScriptedEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        /*
-        Player steps into trigger
-        Player locked into position, cannot move/look
-        Lights flicker, then turn off
-        Prompt to turn flashlight on (lock functionality until this point)
-        When light on, show shadow self
-        Shadow self animate to hit mirror
-        Flashlight goes off
-        Crack SFX
-        Lights on, mirror broken
-        Return control to player
-        */
         if (other.tag == "Player" && !eventTriggered)
         {
             eventTriggered = true;

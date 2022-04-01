@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860345901871476152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0.14}
+  m_LocalPosition: {x: 0, y: 0.626, z: 0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6650728175614615979}
   m_Layer: 3
   m_Name: FirstPersonController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,13 +573,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860345901619861518}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47e4a9a09dd5a6644ae6e0f7750da501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turnOnOff: 0
-  fakeLights: {fileID: 7532915286008685639}
   spotLightCookieOne: {fileID: 1860345901619619234}
   spotLightCookieTwo: {fileID: 1860345901619808122}
   spotLightCookieThree: {fileID: 1860345901619797814}
@@ -686,10 +685,5 @@ PrefabInstance:
 --- !u!4 &2695589457538939246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6704825994251147539, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
-  m_PrefabInstance: {fileID: 8675335737698181245}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7532915286008685639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1220107614019912762, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
   m_PrefabInstance: {fileID: 8675335737698181245}
   m_PrefabAsset: {fileID: 0}
