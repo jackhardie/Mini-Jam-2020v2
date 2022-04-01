@@ -24,6 +24,7 @@ public class TutorialScriptedEvent : MonoBehaviour
 
     bool eventTriggered;
     bool flashLightOn;
+    bool playerMoving;
 
     private void Start()
     {
@@ -55,8 +56,11 @@ public class TutorialScriptedEvent : MonoBehaviour
 
     IEnumerator ScriptedEvent()
     {
-        LockPlayerPosition();
-        yield return new WaitForSeconds(1f);
+        fpsController.enabled = false;
+        playerMoving = true;
+        yield return new WaitForSeconds(2f);
+        mirroredPlayer.SetActive(true);
+        yield return new WaitForSeconds(2f);
         LightsOff();
         yield return new WaitForSeconds(0.5f);
         DisplayPrompt();
@@ -70,10 +74,8 @@ public class TutorialScriptedEvent : MonoBehaviour
 
     void LockPlayerPosition()
     {
-        player.transform.position = lockPoint.position;
-        player.transform.rotation = lockPoint.rotation;
-        fpsController.enabled = false;
-        mirroredPlayer.SetActive(true);
+        player.transform.position = Vector3.Lerp(player.transform.position, lockPoint.position, Time.deltaTime * 2);
+        player.transform.rotation = Quaternion.Lerp(player.transform.rotation, lockPoint.rotation, Time.deltaTime * 2);
     }
 
     void LightsOff()
@@ -119,5 +121,10 @@ public class TutorialScriptedEvent : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && !flashLightOn) flashLightOn = true;
+
+        if (player.transform.position != lockPoint.position && playerMoving == true)
+        {
+            LockPlayerPosition();
+        }
     }
 }
