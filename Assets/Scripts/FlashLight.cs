@@ -34,4 +34,14 @@ public class FlashLight : MonoBehaviour {
         spotLightCookie.GetComponent<Light>().spotAngle -= spotAnglerangeDecrease * Time.deltaTime;
         spotLightCookie.GetComponent<Light>().intensity -= intensityrangeDecrease * Time.deltaTime;
     }
+
+    public void ForceOffFlashlight()
+    {
+        turnOnOff = !turnOnOff;
+        spotLightCookieOne.SetActive(turnOnOff);
+        spotLightCookieTwo.SetActive(turnOnOff);
+        spotLightCookieThree.SetActive(turnOnOff);
+
+        fakeLights.SetActive(turnOnOff);
+    }
 }
