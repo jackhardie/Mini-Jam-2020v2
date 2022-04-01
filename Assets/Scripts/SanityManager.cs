@@ -31,8 +31,6 @@ public class SanityManager : MonoBehaviour
                 currentSanity = totalSanity; //can't go above the max stamina
             }
         }
-
-        print(currentSanity);
     }
 
     public float GetCurrentSanity()

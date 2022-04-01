@@ -19,11 +19,13 @@ public class LightCheck : MonoBehaviour
             sum += CheckLightLevel(lightCheck);
         }
 
+        
         realLightLevel = Mathf.RoundToInt(sum);
-        if (realLightLevel < 0.5)
+        if (realLightLevel < 3)
         {
             realLightLevel = 0;
         }
+        print(realLightLevel);
     }
 
 
