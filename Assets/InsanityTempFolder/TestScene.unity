@@ -1416,10 +1416,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 5879054213654848009, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 04ca83a82346af0419d352fef589596e, type: 2}
     - target: {fileID: 6650728175614615979, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: lightChecker
       value: 
       objectReference: {fileID: 2133029377}
+    - target: {fileID: 7487357210128709409, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
 --- !u!1 &1883302699
