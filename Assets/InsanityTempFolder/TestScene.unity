@@ -1416,6 +1416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 5879054213089174756, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5879054213654848009, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_TargetTexture
       value: 
@@ -1426,7 +1430,11 @@ PrefabInstance:
       objectReference: {fileID: 2133029377}
     - target: {fileID: 7487357210128709409, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7487357210128709411, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
