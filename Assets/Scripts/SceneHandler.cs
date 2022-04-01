@@ -24,6 +24,9 @@ public class SceneHandler : MonoBehaviour {
     public void MainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
+    public void TutorialLevel() {
+        SceneManager.LoadScene("TutorialLevel");
+    }
 
     public void QuitGame() {
         Application.Quit();
