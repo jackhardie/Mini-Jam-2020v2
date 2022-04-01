@@ -7,13 +7,17 @@ public class SanityManager : MonoBehaviour
 {
     [SerializeField]
     LightCheck lightChecker;
+    [SerializeField]
+    MeshRenderer vhsEffectRenderer;
 
     public float totalSanity = 100f;
     public float currentSanity;
     public float gainSanityOverTime = 1f;
     public float loseSanityOverTime = 3f;
+    public float vhsEffectIntensity;
     FirstPersonController player;
     FlashLight flashlight;
+
 
     private void Start()
     {
@@ -33,6 +37,7 @@ public class SanityManager : MonoBehaviour
                 currentSanity = totalSanity;
             }
         }
+        ApplyFilter();
     }
 
     public float GetCurrentSanity()
@@ -40,5 +45,13 @@ public class SanityManager : MonoBehaviour
         return currentSanity;
     }
 
+    void ApplyFilter()
+    {
+        vhsEffectIntensity = 1 - (currentSanity / 100);
+        if (vhsEffectIntensity >= 0.7f) vhsEffectIntensity = 0.7f;
+
+        UnityEngine.Color oldColor = vhsEffectRenderer.material.color;
+        vhsEffectRenderer.material.color = new UnityEngine.Color(oldColor.r, oldColor.g, oldColor.b, vhsEffectIntensity);
+    }
 }
 
