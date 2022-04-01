@@ -527,11 +527,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10840860, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 10857002, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 10882754, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
 --- !u!4 &1860345901619540196 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 470116, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+  m_PrefabInstance: {fileID: 1860345901619731584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1860345901619619234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 129314, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+  m_PrefabInstance: {fileID: 1860345901619731584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1860345901619797814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 197558, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
+  m_PrefabInstance: {fileID: 1860345901619731584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1860345901619808122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 187386, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
   m_PrefabInstance: {fileID: 1860345901619731584}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860345901619861518 stripped
@@ -553,6 +580,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnOnOff: 0
   fakeLights: {fileID: 7532915286008685639}
+  spotLightCookieOne: {fileID: 1860345901619619234}
+  spotLightCookieTwo: {fileID: 1860345901619808122}
+  spotLightCookieThree: {fileID: 1860345901619797814}
+  rangeDecrease: 0.1
+  spotAnglerangeDecrease: 1
+  intensityrangeDecrease: 0.01
 --- !u!1001 &8675335737698181245
 PrefabInstance:
   m_ObjectHideFlags: 0
