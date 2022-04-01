@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 1860345901868175066}
   - component: {fileID: 1860345901866529882}
   - component: {fileID: 1860345901777481145}
+  - component: {fileID: 829903809}
   m_Layer: 0
   m_Name: FirstPersonController
   m_TagString: Untagged
@@ -403,6 +404,19 @@ MonoBehaviour:
   gainStaminaOverTime: 1
   loseStaminaOverTime: 5
   resting: 0
+--- !u!114 &829903809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860345901871476154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220d9bc0012618347bb6cadeae99f2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasTheKey: 0
 --- !u!1001 &1860345901619731584
 PrefabInstance:
   m_ObjectHideFlags: 0
