@@ -25,7 +25,7 @@ public class SceneHandler : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
     public void TutorialLevel() {
-        SceneManager.LoadScene("TutorialLevel");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void RestartLevel() {
