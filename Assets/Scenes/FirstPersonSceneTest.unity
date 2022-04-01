@@ -648,17 +648,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1657974231805356347, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
   m_PrefabInstance: {fileID: 1657974232843152835}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1189053689 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-  m_PrefabInstance: {fileID: 1657974232843152835}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea066c6a716a69c4fa40aa4476749b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1339736401
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,14 +830,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 620206778}
     m_Modifications:
-    - target: {fileID: 615476771370578505, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1189053689}
-    - target: {fileID: 615476771370578505, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 1657974231805356340, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
       propertyPath: m_Name
       value: SceneHandler
@@ -935,26 +916,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1657974231805356347, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657974232726243779, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657974232726243779, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657974232726243779, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657974233033008391, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657974233033008391, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
