@@ -13,7 +13,7 @@ public class Stamina : MonoBehaviour {
     public bool resting;
     FirstPersonController player;
 
-    private void Start() {
+    private void Awake() {
         currentStamina = totalStamina;
         player = FindObjectOfType<FirstPersonController>();
     }
