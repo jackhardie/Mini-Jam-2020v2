@@ -35,4 +35,9 @@ public class Stamina : MonoBehaviour {
             }
         }
     }
+
+    public float GetCurrentStamina() {
+        return currentStamina;
+    }
+
 }
