@@ -1040,6 +1040,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1860345901871476154, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
   m_PrefabInstance: {fileID: 1051607459}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &183630570
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183630560}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 989e1305af2945f468e998a2404f49d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &205613262
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,9 +4869,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 183630570}
+    - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: cameraPlayer
       value: 
       objectReference: {fileID: 329348878}
+    - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: shadowDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 43950294799965073, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -9984,6 +10012,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1651298075254506021, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17.052979
+      objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033243, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_Name
       value: UIPlayer
