@@ -22,6 +22,8 @@ public class SanitySlider : MonoBehaviour
     {
         slider.value = sanity.GetCurrentSanity();
 
+        audioSource.volume = (100 - slider.value)/100;
+
         /*if (slider.value < 95)
         {
             targetVolume = .8f;
