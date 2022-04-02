@@ -7,6 +7,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class SceneHandler : MonoBehaviour {
     public bool menuOnOff;
     FirstPersonController player;
+    [SerializeField] GameObject SanitySlider;
+    [SerializeField] GameObject StaminaSlider;
+    [SerializeField] GameObject FlashLightSlider;
+    [SerializeField] GameObject VHS;
+    [SerializeField] Material VHSPause;
+    [SerializeField] Material VHSPlay;
+
     void Awake() {
         int numGameSessions = FindObjectsOfType<SceneHandler>().Length;
         if (numGameSessions > 1) {
@@ -44,9 +51,13 @@ public class SceneHandler : MonoBehaviour {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
             player.enabled = !menuOnOff;
             if (menuOnOff) {
+                SanitySlider.SetActive(false);
+                StaminaSlider.SetActive(false);
+                FlashLightSlider.SetActive(false);
                 Time.timeScale = 0;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                VHS.GetComponent<Renderer>().material = VHSPause;
             }
             else {
                 Time.timeScale = 1;
@@ -57,8 +68,10 @@ public class SceneHandler : MonoBehaviour {
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf && SceneManager.GetActiveScene().name != "MainMenu") {
             player.enabled = true;
             Time.timeScale = 1;
+            SanitySlider.SetActive(true);
+            StaminaSlider.SetActive(true);
+            FlashLightSlider.SetActive(true);
+            VHS.GetComponent<Renderer>().material = VHSPlay;
         }
-
     }
-
 }
