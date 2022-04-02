@@ -13,6 +13,8 @@ public class SceneHandler : MonoBehaviour {
     [SerializeField] GameObject VHS;
     [SerializeField] TutorialScriptedEvent tutorialScriptedEvent;
     [SerializeField] EndingScriptedEvent endingScriptedEvent;
+
+    bool eventTriggered;
     void Awake() {
         int numGameSessions = FindObjectsOfType<SceneHandler>().Length;
         if (numGameSessions > 1) {
@@ -27,6 +29,15 @@ public class SceneHandler : MonoBehaviour {
         player = FindObjectOfType<FirstPersonController>();
         tutorialScriptedEvent = FindObjectOfType<TutorialScriptedEvent>();
         endingScriptedEvent = FindObjectOfType<EndingScriptedEvent>();
+
+        if (tutorialScriptedEvent != null)
+        {
+            eventTriggered = tutorialScriptedEvent.GetEventTriggered();
+        }
+        else if (endingScriptedEvent != null)
+        {
+            eventTriggered = endingScriptedEvent.GetEventTriggered();
+        }
     }
 
     public void MainMenu() {
@@ -70,8 +81,7 @@ public class SceneHandler : MonoBehaviour {
         }
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf &&
             SceneManager.GetActiveScene().name != "MainMenu" &&
-            !FindObjectOfType<DeathHandler>().IsDead() &&
-            tutorialScriptedEvent.GetEventTriggered() == false) {
+            !FindObjectOfType<DeathHandler>().IsDead() && !eventTriggered) {
             player.enabled = true;
             Time.timeScale = 1;
             SanitySlider.SetActive(true);
