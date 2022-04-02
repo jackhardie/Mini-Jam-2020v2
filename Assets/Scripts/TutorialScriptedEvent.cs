@@ -9,7 +9,6 @@ using UnityEngine.Audio;
 public class TutorialScriptedEvent : MonoBehaviour
 {
     FirstPersonController fpsController;
-    SanityManager sanity;
     [SerializeField]
     GameObject promptText;
     [SerializeField]
@@ -41,7 +40,6 @@ public class TutorialScriptedEvent : MonoBehaviour
     {
         fpsController = player.GetComponent<FirstPersonController>();
         flashLight = player.GetComponentInChildren<FlashLight>();
-        sanity = player.GetComponent<SanityManager>();
     }
 
     private void OnTriggerEnter(Collider other)
