@@ -11,8 +11,6 @@ public class SceneHandler : MonoBehaviour {
     [SerializeField] GameObject StaminaSlider;
     [SerializeField] GameObject FlashLightSlider;
     [SerializeField] GameObject VHS;
-    [SerializeField] Material VHSPause;
-    [SerializeField] Material VHSPlay;
 
     void Awake() {
         int numGameSessions = FindObjectsOfType<SceneHandler>().Length;
@@ -57,7 +55,7 @@ public class SceneHandler : MonoBehaviour {
                 Time.timeScale = 0;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                VHS.GetComponent<Renderer>().material = VHSPause;
+                VHS.SetActive(false);
             }
             else {
                 Time.timeScale = 1;
@@ -71,7 +69,7 @@ public class SceneHandler : MonoBehaviour {
             SanitySlider.SetActive(true);
             StaminaSlider.SetActive(true);
             FlashLightSlider.SetActive(true);
-            VHS.GetComponent<Renderer>().material = VHSPlay;
+            VHS.SetActive(true);
         }
     }
 }

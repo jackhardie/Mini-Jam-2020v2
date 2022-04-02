@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class SanitySlider : MonoBehaviour
 {
-    public Slider slider;
+    [SerializeField] Image sanityWheel;
     public AudioSource audioSource;
     float audioValue = 0f;
     //public float duration;
@@ -17,14 +17,15 @@ public class SanitySlider : MonoBehaviour
     private void Start()
     {
         sanity = FindObjectOfType<SanityManager>();
+        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 10;
         
     }
 
     void Update()
     {
-        slider.value = sanity.GetCurrentSanity();
+        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 10;
 
-        audioValue = ((100 - slider.value) / 100);
+        audioValue = 1 - sanityWheel.fillAmount;
 
        
         audioSource.volume = audioValue;

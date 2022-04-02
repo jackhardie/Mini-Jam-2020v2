@@ -69,7 +69,7 @@ public class FlashLight : MonoBehaviour {
 
     public void ForceOffFlashlight()
     {
-        turnOnOff = !turnOnOff;
+        turnOnOff = false;
         spotLightCookieOne.SetActive(turnOnOff);
         spotLightCookieTwo.SetActive(turnOnOff);
         spotLightCookieThree.SetActive(turnOnOff);
