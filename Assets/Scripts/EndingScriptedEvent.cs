@@ -8,15 +8,24 @@ public class EndingScriptedEvent : MonoBehaviour
     FirstPersonController fpsController;
     SanityManager sanity;
     [SerializeField]
-    FlashLight flashlight;
+    GameObject flashlight;
     Stamina stamina;
 
     [SerializeField]
     GameObject playerUI;
     [SerializeField]
     GameObject player;
+
+    [SerializeField]
+    GameObject runningPlayer;
+    [SerializeField]
+    GameObject lightCheck;
+
     [SerializeField]
     GameObject shadowPlayer;
+    [SerializeField]
+    GameObject shadowPlayer2;
+
     [SerializeField]
     GameObject thirdPersonCamera;
     [SerializeField]
@@ -51,7 +60,9 @@ public class EndingScriptedEvent : MonoBehaviour
     IEnumerator ScriptedEvent()
     {
         DisablePlayerUIAndControl();
+        SwapModels();
         ThirdPersonCameraOnOff();
+        
         moveToPointB = true;
         yield return new WaitForSeconds(0.1f);
         RevealShadow();
@@ -61,17 +72,26 @@ public class EndingScriptedEvent : MonoBehaviour
             moveToPointB = false;
         }
         ThirdPersonCameraOnOff();
+        SwapModels();
+        flashlight.SetActive(true);
+        flashlight.GetComponent<FlashLight>().ForceOffFlashlight();
         ShutDoor();
-        shadowPlayer.transform.position = points[3].position;
+        shadowPlayer2.SetActive(false);
+        
         moveToPointC = true;
         if (moveToPointC)
         {
-            yield return new WaitForSeconds(4.5f);
+            yield return new WaitForSeconds(6f);
             moveToPointC = false;
+            LightsOnOff();
+            yield return new WaitForSeconds(0.5f);
+            LightsOnOff();
+            shadowPlayer.SetActive(true);
         }
-        yield return new WaitForSeconds(1f);
+        
+        yield return new WaitForSeconds(2f);
         LightsOnOff();
-        RevealShadow();
+        shadowPlayer.SetActive(false);
         yield return new WaitForSeconds(2.5f);
         DisplayBloodText();
         LightsOnOff();
@@ -82,7 +102,7 @@ public class EndingScriptedEvent : MonoBehaviour
     private void DisablePlayerUIAndControl()
     {
         sanity.enabled = false;
-        flashlight.ForceOffFlashlight();
+        flashlight.SetActive(false);
         stamina.enabled = false;
         playerUI.SetActive(false);
         fpsController.enabled = false;
@@ -93,27 +113,33 @@ public class EndingScriptedEvent : MonoBehaviour
         thirdPersonCamera.SetActive(!thirdPersonCamera.activeSelf);
     }
 
+    private void SwapModels()
+    {
+        lightCheck.SetActive(!lightCheck.activeSelf);
+        runningPlayer.SetActive(!runningPlayer.activeSelf);
+    }
+
     private void RevealShadow()
     {
-        shadowPlayer.SetActive(!shadowPlayer.activeSelf);
+        shadowPlayer2.SetActive(!shadowPlayer2.activeSelf);
     }
 
     private void MoveToPointB()
     {
-        player.transform.position = Vector3.Lerp(player.transform.position, points[0].position, Time.deltaTime * 0.75f);
+        player.transform.position = Vector3.Lerp(player.transform.position, points[0].position, Time.deltaTime * 0.5f);
         
     }
     private void MoveToPointC()
     {
-        player.transform.position = Vector3.Lerp(player.transform.position, points[1].position, Time.deltaTime * 0.75f);
-        player.transform.rotation = Quaternion.Lerp(player.transform.rotation, points[1].rotation, Time.deltaTime * 0.75f);
+        player.transform.position = Vector3.Lerp(player.transform.position, points[1].position, Time.deltaTime * 0.5f);
+        player.transform.rotation = Quaternion.Lerp(player.transform.rotation, points[1].rotation, Time.deltaTime * 0.5f);
 
     }
     private void MoveShadow()
     {
-        if (moveToPointB) shadowPlayer.transform.position = Vector3.Lerp(shadowPlayer.transform.position, points[2].position, Time.deltaTime * 0.5f);
+        if (moveToPointB) shadowPlayer2.transform.position = Vector3.Lerp(shadowPlayer2.transform.position, points[2].position, Time.deltaTime * 0.6f);
     }
-
+    
     private void ShutDoor()
     {
         door.transform.localRotation = Quaternion.Euler(0, 0, 0);
@@ -136,7 +162,7 @@ public class EndingScriptedEvent : MonoBehaviour
         {
             MoveToPointB();
         }
-        if (player.transform.position != points[1].position && moveToPointC == true)
+        if (player.transform.localRotation.y <= 269 && moveToPointC == true)
         {
             MoveToPointC();
         }
