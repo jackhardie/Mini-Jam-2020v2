@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GenericGameFolderRename/Maps/Tutorial.unity
     guid: aa55ca0a09842a74b86a9463442b1185
+  - enabled: 1
+    path: Assets/GenericGameFolderRename/Maps/First Level.unity
+    guid: 8ed0c30e2a89a3149a74960ef0f490cf
   m_configObjects: {}

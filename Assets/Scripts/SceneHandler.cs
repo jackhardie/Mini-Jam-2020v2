@@ -22,7 +22,6 @@ public class SceneHandler : MonoBehaviour {
     }
 
     public void MainMenu() {
-        this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         SceneManager.LoadScene("MainMenu");
     }
     public void TutorialLevel() {
@@ -54,9 +53,12 @@ public class SceneHandler : MonoBehaviour {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
-
-
         }
+        if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf && SceneManager.GetActiveScene().name != "MainMenu") {
+            player.enabled = true;
+            Time.timeScale = 1;
+        }
+
     }
 
 }
