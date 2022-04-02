@@ -15,6 +15,9 @@ public class FlashLight : MonoBehaviour {
     [SerializeField] float spotAnglerangeDecrease = 1f;
     [SerializeField] float intensityrangeDecrease = 0.01f;
 
+    [HideInInspector]
+    public float batteryLevel = 100f;
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.E)) {
             turnOnOff = !turnOnOff;
@@ -27,8 +30,11 @@ public class FlashLight : MonoBehaviour {
             DecreaseLight(spotLightCookieOne);
             DecreaseLight(spotLightCookieTwo);
             DecreaseLight(spotLightCookieThree);
+            if (batteryLevel > 0) batteryLevel -= 0.01f;
             
         }
+
+        if (batteryLevel <= 0) ForceOffFlashlight();
     }
 
     private void DecreaseLight(GameObject spotLightCookie) {

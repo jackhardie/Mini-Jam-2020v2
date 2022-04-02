@@ -10,11 +10,11 @@ public class SanityManager : MonoBehaviour
     [SerializeField]
     MeshRenderer vhsEffectRenderer;
 
-    public float totalSanity = 100f;
+    float totalSanity = 100f;
     public float currentSanity;
-    public float gainSanityOverTime = 1f;
-    public float loseSanityOverTime = 3f;
-    public float vhsEffectIntensity;
+    float gainSanityOverTime = 1f;
+    float loseSanityOverTime = 3f;
+    float vhsEffectIntensity;
     FirstPersonController player;
     FlashLight flashlight;
 
@@ -28,7 +28,7 @@ public class SanityManager : MonoBehaviour
 
     void Update()
     {
-        if(lightChecker.realLightLevel <= 0 && !flashlight.turnOnOff) currentSanity -= loseSanityOverTime * Time.deltaTime;
+        if(lightChecker.realLightLevel <= 0 && !flashlight.turnOnOff && flashlight.batteryLevel > 0f) currentSanity -= loseSanityOverTime * Time.deltaTime;
         else if(lightChecker.realLightLevel > 0)
         {
             currentSanity += gainSanityOverTime * Time.deltaTime;

@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 public class TutorialScriptedEvent : MonoBehaviour
 {
     FirstPersonController fpsController;
+    SanityManager sanity;
     [SerializeField]
     GameObject promptText;
     [SerializeField]
@@ -31,11 +32,13 @@ public class TutorialScriptedEvent : MonoBehaviour
     bool eventTriggered;
     bool flashLightOn;
     bool playerMoving;
+    bool promptActive;
 
     private void Start()
     {
         fpsController = player.GetComponent<FirstPersonController>();
         flashLight = player.GetComponentInChildren<FlashLight>();
+        sanity = player.GetComponent<SanityManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -87,6 +90,7 @@ public class TutorialScriptedEvent : MonoBehaviour
     void DisplayPrompt()
     {
         flashLight.enabled = true;
+        promptActive = true;
         promptText.SetActive(true);
     }
 
@@ -94,6 +98,7 @@ public class TutorialScriptedEvent : MonoBehaviour
     void ShowShadowSelf()
     {
         promptText.SetActive(false);
+        promptActive = false;
         shadowSelf.SetActive(true);
         audioSource.PlayOneShot(lightScareSFX, .8f);
     }
@@ -114,11 +119,14 @@ public class TutorialScriptedEvent : MonoBehaviour
 
         fpsController.enabled = true;
         flashLight.enabled = true;
+        eventTriggered = false;
+        flashLight.batteryLevel = 100f;
+        sanity.currentSanity = 100f;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !flashLightOn) flashLightOn = true;
+        if (Input.GetKeyDown(KeyCode.E) && !flashLightOn && eventTriggered && promptActive) flashLightOn = true;
 
         if (player.transform.position != lockPoint.position && playerMoving == true)
         {
