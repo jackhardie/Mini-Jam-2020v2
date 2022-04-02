@@ -3,7 +3,12 @@ guid: 951f36b8c42ca8041b8a0e559111e800
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: 0a487ae6aa9c7f84f9fec7f2c5791b7c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -37,7 +42,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
