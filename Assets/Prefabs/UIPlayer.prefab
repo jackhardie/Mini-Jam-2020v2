@@ -427,6 +427,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlashlightSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 6722987049451755401, guid: cbc9529ef8bcace4498d3ed4b9c45fa2, type: 3}
+      propertyPath: m_Name
+      value: FlashlightBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884282734502789839, guid: cbc9529ef8bcace4498d3ed4b9c45fa2, type: 3}
+      propertyPath: m_Name
+      value: FlashlightOverlay
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc9529ef8bcace4498d3ed4b9c45fa2, type: 3}
 --- !u!224 &2376003059045653777 stripped
