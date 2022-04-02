@@ -59,7 +59,7 @@ public class SceneHandler : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu" &&
             !FindObjectOfType<DeathHandler>().IsDead() &&
-            tutorialScriptedEvent.GetEventTriggered() == false) {
+            !eventTriggered) {
             Debug.Log("escape pressed");
             menuOnOff = !menuOnOff;
             this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
