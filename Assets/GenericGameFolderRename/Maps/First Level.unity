@@ -185,6 +185,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
   m_PrefabInstance: {fileID: 18153186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &45060895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 894206025, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 79500518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &56152716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3660,6 +3665,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8089301954257772023, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: VHS
+      value: 
+      objectReference: {fileID: 45060895}
     - target: {fileID: 8089301954976862666, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

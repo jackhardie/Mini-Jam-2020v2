@@ -640,6 +640,11 @@ Transform:
   m_Father: {fileID: 1249472608}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &84385993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 894206025, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 1051607459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &94100907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8931,6 +8936,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8089301954257772023, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: VHS
+      value: 
+      objectReference: {fileID: 84385993}
+    - target: {fileID: 8089301954257772023, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: VHSeffect
+      value: 
+      objectReference: {fileID: 2100000, guid: 587168c0187b2274e9106a256bc8790f, type: 2}
     - target: {fileID: 8089301954976862666, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

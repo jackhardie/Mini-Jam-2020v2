@@ -422,6 +422,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 882930069095318329, guid: f6cfbff5de0bd154ba2e114501aeaf02, type: 3}
   m_PrefabInstance: {fileID: 2478905916258126433}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8743475944401083189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6571251893104611668, guid: f6cfbff5de0bd154ba2e114501aeaf02, type: 3}
+  m_PrefabInstance: {fileID: 2478905916258126433}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7440148358134083962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,6 +569,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8190395545494057823, guid: cf8a68058f59cc6488dcdc912c2ffee3, type: 3}
   m_PrefabInstance: {fileID: 7440148358134083962}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1651298075254506022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8190395545494057820, guid: cf8a68058f59cc6488dcdc912c2ffee3, type: 3}
+  m_PrefabInstance: {fileID: 7440148358134083962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7440148358268441629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,6 +704,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1241013688967625196, guid: 1be87797d0db7a3498c9471cca960949, type: 3}
   m_PrefabInstance: {fileID: 7440148358268441629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8536644411050962422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1241013688967625195, guid: 1be87797d0db7a3498c9471cca960949, type: 3}
+  m_PrefabInstance: {fileID: 7440148358268441629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7440148358589199565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,6 +724,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: VHS
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: VHSPlay
+      value: 
+      objectReference: {fileID: 2100000, guid: 587168c0187b2274e9106a256bc8790f, type: 2}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: VHSPause
+      value: 
+      objectReference: {fileID: 2100000, guid: 7da5bf7ebdf85ab47a674a10b0193c7f, type: 2}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: SanitySlider
+      value: 
+      objectReference: {fileID: 8536644411050962422}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: StaminaSlider
+      value: 
+      objectReference: {fileID: 1651298075254506022}
+    - target: {fileID: 1657974231805356346, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
+      propertyPath: FlashLightSlider
+      value: 
+      objectReference: {fileID: 8743475944401083189}
     - target: {fileID: 1657974231805356347, guid: 955b40c7dc935bb40b9d792cdeb155cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
