@@ -22,6 +22,7 @@ public class SceneHandler : MonoBehaviour {
     }
 
     public void MainMenu() {
+        this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         SceneManager.LoadScene("MainMenu");
     }
     public void TutorialLevel() {
