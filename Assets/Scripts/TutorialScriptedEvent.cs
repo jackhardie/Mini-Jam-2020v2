@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Audio;
+
 public class TutorialScriptedEvent : MonoBehaviour
 {
     FirstPersonController fpsController;
@@ -21,6 +23,9 @@ public class TutorialScriptedEvent : MonoBehaviour
     Transform lockPoint;
 
     FlashLight flashLight;
+
+    public AudioClip lightScareSFX;
+    public AudioSource audioSource;
 
     bool eventTriggered;
     bool flashLightOn;
@@ -88,6 +93,7 @@ public class TutorialScriptedEvent : MonoBehaviour
     {
         promptText.SetActive(false);
         shadowSelf.SetActive(true);
+        audioSource.PlayOneShot(lightScareSFX, .8f);
     }
 
     void ForceFlashlightOff()

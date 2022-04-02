@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FlashLight : MonoBehaviour {
+
+
     public bool turnOnOff = false;
     [SerializeField] GameObject spotLightCookieOne;
     [SerializeField] GameObject spotLightCookieTwo;
@@ -18,11 +21,13 @@ public class FlashLight : MonoBehaviour {
             spotLightCookieOne.SetActive(turnOnOff);
             spotLightCookieTwo.SetActive(turnOnOff);
             spotLightCookieThree.SetActive(turnOnOff);
+
         }
         if (turnOnOff) {
             DecreaseLight(spotLightCookieOne);
             DecreaseLight(spotLightCookieTwo);
             DecreaseLight(spotLightCookieThree);
+            
         }
     }
 
@@ -38,5 +43,6 @@ public class FlashLight : MonoBehaviour {
         spotLightCookieOne.SetActive(turnOnOff);
         spotLightCookieTwo.SetActive(turnOnOff);
         spotLightCookieThree.SetActive(turnOnOff);
+        
     }
 }
