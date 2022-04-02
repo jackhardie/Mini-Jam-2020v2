@@ -2,24 +2,40 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class DeathHandler : MonoBehaviour {
-    bool isDead;
+
     SanityManager sanityManager;
+    FirstPersonController player;
+    Quaternion targetRotation;
+ //   Transform targetRotation;
+    public Camera cameraPlayer;
+    bool isDead;
+
+    public bool IsDead() {
+        return isDead;
+    }
+
     void Start() {
+        isDead = false;
         sanityManager = GetComponent<SanityManager>();
+        player = FindObjectOfType<FirstPersonController>();
     }
 
-    // Update is called once per frame
     void Update() {
-        if (sanityManager.GetCurrentSanity() < 0 && !isDead) {
-            Debug.Log("Player is dead");
+        if (sanityManager.GetCurrentSanity() < 0 && !isDead|| Input.GetKey(KeyCode.P)) {
             isDead = true;
-            DeathEvent();
-
+            targetRotation = Quaternion.LookRotation(-transform.forward, Vector3.up);
         }
+        if (isDead)
+            DeathEvent();
     }
+
     private void DeathEvent() {
-        throw new NotImplementedException();
+        player.enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 1f * Time.deltaTime);
     }
 }

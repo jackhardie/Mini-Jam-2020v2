@@ -146,4 +146,8 @@ public class EndingScriptedEvent : MonoBehaviour
             MoveShadow();
         }
     }
+    public bool GetEventTriggered() {
+        return eventTriggered;
+    }
+
 }

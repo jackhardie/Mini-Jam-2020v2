@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 1860345901777481145}
   - component: {fileID: 829903809}
   - component: {fileID: 6650728175614615979}
+  - component: {fileID: 183630569}
   m_Layer: 3
   m_Name: FirstPersonController
   m_TagString: Player
@@ -629,6 +630,19 @@ MonoBehaviour:
   lightChecker: {fileID: 0}
   vhsEffectRenderer: {fileID: 894206029}
   currentSanity: 0
+--- !u!114 &183630569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860345901871476154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad165046f2e2f5e43b26040fe688030b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPlayer: {fileID: 1860345901872590746}
 --- !u!1001 &1860345901619731584
 PrefabInstance:
   m_ObjectHideFlags: 0

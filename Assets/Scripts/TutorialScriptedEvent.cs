@@ -140,4 +140,9 @@ public class TutorialScriptedEvent : MonoBehaviour
             LockPlayerPosition();
         }
     }
+
+    public bool GetEventTriggered() {
+        return eventTriggered;
+    }
+
 }
