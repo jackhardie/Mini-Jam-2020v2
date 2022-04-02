@@ -20,7 +20,7 @@ public class LightCheck : MonoBehaviour
         }
 
         realLightLevel = Mathf.RoundToInt(sum);
-        if (realLightLevel <= 5)
+        if (realLightLevel <= 16)
         {
             realLightLevel = 0;
         }

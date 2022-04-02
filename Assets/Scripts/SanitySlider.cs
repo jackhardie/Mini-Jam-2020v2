@@ -17,13 +17,13 @@ public class SanitySlider : MonoBehaviour
     private void Start()
     {
         sanity = FindObjectOfType<SanityManager>();
-        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 10;
+        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 100;
         
     }
 
     void Update()
     {
-        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 10;
+        sanityWheel.fillAmount = sanity.GetCurrentSanity() / 100;
 
         audioValue = 1 - sanityWheel.fillAmount;
 
