@@ -11,8 +11,8 @@ public class SceneHandler : MonoBehaviour {
     [SerializeField] GameObject StaminaSlider;
     [SerializeField] GameObject FlashLightSlider;
     [SerializeField] GameObject VHS;
-    [SerializeField] TutorialScriptedEvent tutorialScriptedEvent;
-    [SerializeField] EndingScriptedEvent endingScriptedEvent;
+    TutorialScriptedEvent tutorialScriptedEvent;
+    EndingScriptedEvent endingScriptedEvent;
 
     bool eventTriggered;
     void Awake() {
