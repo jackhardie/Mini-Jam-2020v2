@@ -9,8 +9,8 @@ public class DeathHandler : MonoBehaviour {
     SanityManager sanityManager;
     FirstPersonController player;
     Quaternion targetRotation;
- //   Transform targetRotation;
-    public Camera cameraPlayer;
+    Transform targetPosition;
+    public GameObject cameraPlayer;
     bool isDead;
 
     public bool IsDead() {
@@ -24,9 +24,10 @@ public class DeathHandler : MonoBehaviour {
     }
 
     void Update() {
-        if (sanityManager.GetCurrentSanity() < 0 && !isDead|| Input.GetKey(KeyCode.P)) {
+        if (sanityManager.GetCurrentSanity() < 0 && !isDead || Input.GetKeyDown(KeyCode.P)) {
             isDead = true;
             targetRotation = Quaternion.LookRotation(-transform.forward, Vector3.up);
+            cameraPlayer.transform.position += new Vector3(0.0f, 0.0f, 2f );
         }
         if (isDead)
             DeathEvent();
@@ -36,6 +37,9 @@ public class DeathHandler : MonoBehaviour {
         player.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 1f * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.5f * Time.deltaTime);
+        //  cameraPlayer.transform.position = Vector3.Slerp(cameraPlayer.transform.position, targetPosition.position, 0.5f * Time.deltaTime);
+
+
     }
 }
