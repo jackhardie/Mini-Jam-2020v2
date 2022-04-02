@@ -23,6 +23,9 @@ public class TutorialScriptedEvent : MonoBehaviour
     [SerializeField]
     Transform lockPoint;
 
+    [SerializeField]
+    GameObject[] bloodText;
+
     FlashLight flashLight;
 
     public AudioClip lightScareSFX;
@@ -68,6 +71,7 @@ public class TutorialScriptedEvent : MonoBehaviour
         yield return new WaitForSeconds(2f);
         ForceFlashlightOff();
         yield return new WaitForSeconds(1f);
+        DisplayBloodText();
         LightsOn();
         Destroy(this);
     }
@@ -106,8 +110,15 @@ public class TutorialScriptedEvent : MonoBehaviour
     void ForceFlashlightOff()
     {
         flashLight.ForceOffFlashlight();
-        flashLight.enabled = false;
         Destroy(shadowSelf);
+    }
+
+    void DisplayBloodText()
+    {
+        foreach(GameObject canvas in bloodText)
+        {
+            canvas.SetActive(true);
+        }
     }
 
     void LightsOn()
@@ -120,8 +131,6 @@ public class TutorialScriptedEvent : MonoBehaviour
         fpsController.enabled = true;
         flashLight.enabled = true;
         eventTriggered = false;
-        flashLight.batteryLevel = 100f;
-        sanity.currentSanity = 100f;
     }
 
     private void Update()

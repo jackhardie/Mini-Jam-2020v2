@@ -2933,37 +2933,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1895771662}
+  - {fileID: 254384087}
+  - {fileID: 406541585}
   - {fileID: 1400823974}
   - {fileID: 1956714873}
   - {fileID: 1417713281}
   - {fileID: 783106201}
   - {fileID: 847425367}
   - {fileID: 866280557}
-  - {fileID: 1949424858}
-  - {fileID: 929397445}
-  - {fileID: 113306675}
-  - {fileID: 1409444562}
-  - {fileID: 254384087}
-  - {fileID: 52581362}
-  - {fileID: 1590765068}
-  - {fileID: 249624891}
-  - {fileID: 1008725431}
   - {fileID: 1096776292}
   - {fileID: 2078597388}
-  - {fileID: 1669275442}
+  - {fileID: 929397445}
+  - {fileID: 1949424858}
+  - {fileID: 113306675}
   - {fileID: 1066173740}
   - {fileID: 215715361}
   - {fileID: 1317716277}
   - {fileID: 939358810}
+  - {fileID: 1669275442}
   - {fileID: 261590639}
-  - {fileID: 406541585}
+  - {fileID: 52581362}
   - {fileID: 1154988834}
+  - {fileID: 1409444562}
+  - {fileID: 249624891}
   - {fileID: 1978251107}
   - {fileID: 170111771}
+  - {fileID: 1008725431}
   - {fileID: 714876658}
   - {fileID: 1170390693}
   - {fileID: 1355159160}
   - {fileID: 825999693}
+  - {fileID: 1590765068}
   - {fileID: 94100908}
   - {fileID: 397812896}
   - {fileID: 1946873048}
@@ -3051,6 +3051,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7404e8d0e41424f478e1191c7ff5e1a5, type: 3}
   m_PrefabInstance: {fileID: 783106200}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &793604911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8089301954257772023, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+  m_PrefabInstance: {fileID: 7440148358259504581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea066c6a716a69c4fa40aa4476749b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &801212172 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
@@ -4365,14 +4376,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 894206025, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
-      propertyPath: m_Name
-      value: VHSeffect
-      objectReference: {fileID: 0}
-    - target: {fileID: 1860345901866529882, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 09b2387fa8c8867438d6ca95576c325f, type: 2}
     - target: {fileID: 1860345901871051162, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4422,21 +4425,21 @@ PrefabInstance:
       value: FirstPersonController
       objectReference: {fileID: 0}
     - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
-      propertyPath: audioSource
+      propertyPath: sceneHandler
       value: 
-      objectReference: {fileID: 865573868}
+      objectReference: {fileID: 793604911}
+    - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: flashlightBar
+      value: 
+      objectReference: {fileID: 2077529821}
     - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: flashlightSFX
       value: 
-      objectReference: {fileID: 8300000, guid: c51e7f6e29398ed43aa80231a60b0067, type: 3}
+      objectReference: {fileID: 865573868}
     - target: {fileID: 6650728175614615979, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: lightChecker
       value: 
       objectReference: {fileID: 69906055}
-    - target: {fileID: 6650728175614615979, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
-      propertyPath: vhsEffectRenderer
-      value: 
-      objectReference: {fileID: 1730763579}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
 --- !u!1001 &1066173739
@@ -6869,11 +6872,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
   m_PrefabInstance: {fileID: 1287599818}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1730763579 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 894206029, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
-  m_PrefabInstance: {fileID: 1051607459}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732683744
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,6 +8258,7 @@ MonoBehaviour:
   mirroredPlayer: {fileID: 1987126974}
   shadowSelf: {fileID: 1860345902389782451}
   lockPoint: {fileID: 1580126505}
+  bloodText: []
   lightScareSFX: {fileID: 8300000, guid: 71dc21506afab9641b0978e5b60c09e1, type: 3}
   flashlightSFX: {fileID: 8300000, guid: c51e7f6e29398ed43aa80231a60b0067, type: 3}
   audioSource: {fileID: 1325041947}
@@ -8370,6 +8369,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2077529821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4499710040010838701, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+  m_PrefabInstance: {fileID: 7440148358259504581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2078597387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8829,14 +8839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1651298075278853914, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651298075278853914, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033243, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_Name
       value: UIPlayer

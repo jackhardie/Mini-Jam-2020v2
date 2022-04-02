@@ -28,8 +28,8 @@ public class SanityManager : MonoBehaviour
 
     void Update()
     {
-        if(lightChecker.realLightLevel <= 0 && !flashlight.turnOnOff && flashlight.batteryLevel > 0f) currentSanity -= loseSanityOverTime * Time.deltaTime;
-        else if(lightChecker.realLightLevel > 0)
+        if (lightChecker.realLightLevel <= 0 && !flashlight.turnOnOff && flashlight.batteryLevel > 0f || flashlight.batteryLevel <= 0f) currentSanity -= loseSanityOverTime * Time.deltaTime;
+        else if (lightChecker.realLightLevel > 0 && flashlight.batteryLevel > 0f)
         {
             currentSanity += gainSanityOverTime * Time.deltaTime;
             if (currentSanity > totalSanity)
@@ -37,6 +37,7 @@ public class SanityManager : MonoBehaviour
                 currentSanity = totalSanity;
             }
         }
+
         ApplyFilter();
     }
 

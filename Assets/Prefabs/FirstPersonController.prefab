@@ -597,7 +597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalStamina: 10
   currentStamina: 0
-  thresholdStaminaRun: 3
+  staminaRunThreshold: 0.14
   gainStaminaOverTime: 1
   loseStaminaOverTime: 5
   resting: 0
@@ -776,9 +776,13 @@ MonoBehaviour:
   spotLightCookieTwo: {fileID: 1860345901619808122}
   spotLightCookieThree: {fileID: 1860345901619797814}
   rangeDecrease: 0.1
+  batteryDecrease: 1
   spotAnglerangeDecrease: 1
   intensityrangeDecrease: 0.01
+  flashlightSFX: {fileID: 0}
+  sceneHandler: {fileID: 0}
   batteryLevel: 100
+  flashlightBar: {fileID: 0}
 --- !u!1001 &8675335737698181245
 PrefabInstance:
   m_ObjectHideFlags: 0

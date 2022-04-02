@@ -7,7 +7,7 @@ public class Stamina : MonoBehaviour {
 
     public float totalStamina = 100f;
     public float currentStamina;
-    public float thresholdStaminaRun = 3f;
+    public float staminaRunThreshold = 0.14f;
     public float gainStaminaOverTime = 1f;
     public float loseStaminaOverTime = 3f;
     public bool resting;
@@ -21,7 +21,7 @@ public class Stamina : MonoBehaviour {
     void Update() {
         if (Input.GetKey(KeyCode.LeftShift) && !resting) { //running
             currentStamina -= loseStaminaOverTime * Time.deltaTime;
-            if (currentStamina < thresholdStaminaRun) {
+            if (currentStamina < staminaRunThreshold) {
                 resting = true;
                 player.SetRunSpeed(4f);
             }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class SceneHandler : MonoBehaviour {
-    private bool menuOnOff;
+    public bool menuOnOff;
     FirstPersonController player;
     void Awake() {
         int numGameSessions = FindObjectsOfType<SceneHandler>().Length;
