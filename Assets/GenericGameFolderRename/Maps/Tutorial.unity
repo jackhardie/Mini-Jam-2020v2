@@ -6428,17 +6428,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7404e8d0e41424f478e1191c7ff5e1a5, type: 3}
   m_PrefabInstance: {fileID: 945778185}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1223000890 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1241013688967625198, guid: 1be87797d0db7a3498c9471cca960949, type: 3}
-  m_PrefabInstance: {fileID: 8954328}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1223000891 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1241013688967625196, guid: 1be87797d0db7a3498c9471cca960949, type: 3}
@@ -7825,7 +7814,6 @@ GameObject:
   - component: {fileID: 1629704803}
   - component: {fileID: 1629704802}
   - component: {fileID: 1629704801}
-  - component: {fileID: 1629704800}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7833,22 +7821,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1629704800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629704798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12d823e3695a2c24496d84dc6c530b39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1223000890}
-  audioSource: {fileID: 0}
-  duration: 0
-  targetVolume: 0
 --- !u!114 &1629704801
 MonoBehaviour:
   m_ObjectHideFlags: 0
