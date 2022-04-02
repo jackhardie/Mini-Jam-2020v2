@@ -642,7 +642,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad165046f2e2f5e43b26040fe688030b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPlayer: {fileID: 1860345901872590746}
+  cameraPlayer: {fileID: 1860345901871476152}
+  shadowSelf: {fileID: 7308406900919675921, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
+  speedRotation: 1
+  shadowDistance: 3
+  shadowSpawnTime: 2
 --- !u!1001 &1860345901619731584
 PrefabInstance:
   m_ObjectHideFlags: 0
