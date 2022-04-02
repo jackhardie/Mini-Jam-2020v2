@@ -8,22 +8,31 @@ public class SanitySlider : MonoBehaviour
 {
     public Slider slider;
     public AudioSource audioSource;
-    public float duration;
-    public float targetVolume;
+    float audioValue = 0f;
+    //public float duration;
+    //public float targetVolume;
    
     SanityManager sanity;
 
     private void Start()
     {
         sanity = FindObjectOfType<SanityManager>();
+        
     }
 
     void Update()
     {
         slider.value = sanity.GetCurrentSanity();
 
-        audioSource.volume = (100 - slider.value)/100;
+        audioValue = ((100 - slider.value) / 100);
 
+       
+        audioSource.volume = audioValue;
+
+        SetSanitySound(audioValue);
+        Debug.Log(audioSource);
+        Debug.Log(audioSource.volume);
+      
         /*if (slider.value < 95)
         {
             targetVolume = .8f;
@@ -36,4 +45,13 @@ public class SanitySlider : MonoBehaviour
             StartCoroutine(AudioFade.StartFade(audioSource, duration, targetVolume));
         }*/
     }
+
+    public void SetSanitySound(float sanityLevel)
+    {
+
+        
+
+        audioSource.volume = sanityLevel;
+    }
+
 }

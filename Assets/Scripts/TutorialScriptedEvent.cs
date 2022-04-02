@@ -25,6 +25,7 @@ public class TutorialScriptedEvent : MonoBehaviour
     FlashLight flashLight;
 
     public AudioClip lightScareSFX;
+    public AudioClip flashlightSFX;
     public AudioSource audioSource;
 
     bool eventTriggered;
@@ -56,6 +57,7 @@ public class TutorialScriptedEvent : MonoBehaviour
         mirroredPlayer.SetActive(true);
         yield return new WaitForSeconds(2f);
         LightsOff();
+        audioSource.PlayOneShot(flashlightSFX, .8f);
         yield return new WaitForSeconds(0.5f);
         DisplayPrompt();
         while(!flashLightOn) yield return null;
