@@ -75,6 +75,8 @@ public class DeathHandler : MonoBehaviour {
     public void SpawnShadowEvent() {
         shadowSelf.SetActive(true);
         Instantiate(shadowSelf, (transform.position - transform.forward * shadowDistance), transform.rotation);
+        audiosource.PlayOneShot(attackSFX, .8f);
+
     }
 
 }
