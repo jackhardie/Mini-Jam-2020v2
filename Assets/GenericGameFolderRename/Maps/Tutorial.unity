@@ -12952,6 +12952,7 @@ MonoBehaviour:
   lightScareSFX: {fileID: 8300000, guid: 71dc21506afab9641b0978e5b60c09e1, type: 3}
   flashlightSFX: {fileID: 8300000, guid: c51e7f6e29398ed43aa80231a60b0067, type: 3}
   audioSource: {fileID: 1325041947}
+  heavyScareSFX: {fileID: 8300000, guid: ead09de97fe86db45a5a38933585a089, type: 3}
 --- !u!65 &2044051218
 BoxCollider:
   m_ObjectHideFlags: 0
