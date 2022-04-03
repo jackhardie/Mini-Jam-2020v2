@@ -9,6 +9,8 @@ public class LightCheck : MonoBehaviour
     public int realLightLevel;
     float sum;
     float threshold = 200000;
+    [SerializeField]
+    int deadlyLightLevel;
 
     // Update is called once per frame
     void Update()
@@ -20,7 +22,8 @@ public class LightCheck : MonoBehaviour
         }
 
         realLightLevel = Mathf.RoundToInt(sum);
-        if (realLightLevel <= 16)
+        print(realLightLevel);
+        if (realLightLevel <= deadlyLightLevel)
         {
             realLightLevel = 0;
         }

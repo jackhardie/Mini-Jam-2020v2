@@ -31,8 +31,8 @@ public class SanitySlider : MonoBehaviour
         audioSource.volume = audioValue;
 
         SetSanitySound(audioValue);
-        Debug.Log(audioSource);
-        Debug.Log(audioSource.volume);
+        //Debug.Log(audioSource);
+        //Debug.Log(audioSource.volume);
       
         /*if (slider.value < 95)
         {

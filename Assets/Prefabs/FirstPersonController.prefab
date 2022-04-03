@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalStamina: 10
   currentStamina: 0
-  staminaRunThreshold: 0.14
+  staminaRunThreshold: 1.4
   gainStaminaOverTime: 1
   loseStaminaOverTime: 5
   resting: 0
@@ -647,6 +647,7 @@ MonoBehaviour:
   speedRotation: 1
   shadowDistance: 3
   shadowSpawnTime: 2
+  animator: {fileID: 0}
 --- !u!1001 &1860345901619731584
 PrefabInstance:
   m_ObjectHideFlags: 0
