@@ -722,9 +722,45 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: animatorDeathBySanity
+      value: 
+      objectReference: {fileID: 1230613058}
     - target: {fileID: 1860345901866529882, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: MaxDistance
       value: 30859.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871051160, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_RootOrder
@@ -5424,6 +5460,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
   m_PrefabInstance: {fileID: 1210788864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1230613058 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 183630570, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+  m_PrefabInstance: {fileID: 79500518}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1271801899
 PrefabInstance:

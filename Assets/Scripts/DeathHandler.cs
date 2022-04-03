@@ -42,9 +42,10 @@ public class DeathHandler : MonoBehaviour {
         }
 
         if (isKilledByAttack || Input.GetKeyDown(KeyCode.K)) {
-            animatorDeathBySanity.enabled = true;
-            GetComponent<Animator>().SetBool("deadByFrontal", true);
             isDead = true;
+            DeathAnimation();
+            DeathEvent();
+            GetComponent<Animator>().SetBool("deadByFrontal", true);
         }
 
     }
