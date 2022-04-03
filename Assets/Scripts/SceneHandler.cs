@@ -11,8 +11,8 @@ public class SceneHandler : MonoBehaviour {
     [SerializeField] GameObject StaminaSlider;
     [SerializeField] GameObject FlashLightSlider;
     [SerializeField] GameObject VHS;
-    TutorialScriptedEvent tutorialScriptedEvent;
-    EndingScriptedEvent endingScriptedEvent;
+  public  CutSceneScriptedEvent scriptedEvent;
+  
     DeathHandler deathHandler;
     public bool eventTriggered;
     void Awake() {
@@ -27,15 +27,8 @@ public class SceneHandler : MonoBehaviour {
 
     private void Start() {
         player = FindObjectOfType<FirstPersonController>();
-        tutorialScriptedEvent = FindObjectOfType<TutorialScriptedEvent>();
-        endingScriptedEvent = FindObjectOfType<EndingScriptedEvent>();
+        scriptedEvent = FindObjectOfType<CutSceneScriptedEvent>();
         deathHandler = FindObjectOfType<DeathHandler>();
-        if (tutorialScriptedEvent != null) {
-            eventTriggered = tutorialScriptedEvent.GetEventTriggered();
-        }
-        else if (endingScriptedEvent != null) {
-            eventTriggered = endingScriptedEvent.GetEventTriggered();
-        }
     }
 
     public void MainMenu() {
@@ -57,7 +50,7 @@ public class SceneHandler : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu" &&
             !deathHandler.IsDead() &&
-            !eventTriggered) {
+            !scriptedEvent.GetEventTriggered()) {
             Debug.Log("escape pressed");
             menuOnOff = !menuOnOff;
             this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
@@ -79,7 +72,8 @@ public class SceneHandler : MonoBehaviour {
         }
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf &&
             SceneManager.GetActiveScene().name != "MainMenu" &&
-              !deathHandler.IsDead() && !eventTriggered) {
+              !deathHandler.IsDead() && 
+              !scriptedEvent.GetEventTriggered()) {
             player.enabled = true;
             Time.timeScale = 1;
             SanitySlider.SetActive(true);
