@@ -343,7 +343,7 @@ PrefabInstance:
     - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: attackSFX
       value: 
-      objectReference: {fileID: 8300000, guid: 4d3929ecee16e084da5fffd049e27a30, type: 3}
+      objectReference: {fileID: 8300000, guid: ead09de97fe86db45a5a38933585a089, type: 3}
     - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: audiosource
       value: 
@@ -4147,6 +4147,7 @@ GameObject:
   - component: {fileID: 1412512934}
   - component: {fileID: 1412512933}
   - component: {fileID: 1412512935}
+  - component: {fileID: 1412512936}
   m_Layer: 0
   m_Name: Monster HIt Audio
   m_TagString: Untagged
@@ -4279,6 +4280,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationSoundPlayer: {fileID: 1412512933}
   attackSFX: {fileID: 8300000, guid: 4d3929ecee16e084da5fffd049e27a30, type: 3}
+--- !u!114 &1412512936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412512932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea67b2ea2c825a4080d0cf3135e2592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSoundPlayer: {fileID: 1412512933}
+  screamSFX: {fileID: 8300000, guid: ead09de97fe86db45a5a38933585a089, type: 3}
 --- !u!1001 &1427280922
 PrefabInstance:
   m_ObjectHideFlags: 0
