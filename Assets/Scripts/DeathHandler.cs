@@ -16,6 +16,7 @@ public class DeathHandler : MonoBehaviour {
     [SerializeField] float shadowDistance = 3f;
     [SerializeField] float shadowSpawnTime = 2f;
     [SerializeField] Animator animator;
+    Transform startDeathPosition;
     public bool IsDead() {
         return isDead;
     }
@@ -29,9 +30,9 @@ public class DeathHandler : MonoBehaviour {
     void Update() {
         if (sanityManager.GetCurrentSanity() < 0 && !isDead || Input.GetKeyDown(KeyCode.P)) {
             isDead = true;
+            startDeathPosition = cameraPlayer.transform;
             DeathEvent();
             DeathAnimation();
-            StartCoroutine("SpawnShadow");
         }
     }
 
@@ -45,11 +46,9 @@ public class DeathHandler : MonoBehaviour {
         Cursor.visible = false;
     }
 
-    IEnumerator SpawnShadow() {
-
-        yield return new WaitForSeconds(shadowSpawnTime);
+    public void SpawnShadowEvent() {
         shadowSelf.SetActive(true);
-        Instantiate(shadowSelf, (transform.position - new Vector3(0f, 0f, shadowDistance)), Quaternion.identity);
+        Instantiate(shadowSelf, (transform.position - transform.forward * shadowDistance), transform.rotation);
     }
 
 }

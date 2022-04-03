@@ -13,8 +13,8 @@ public class SceneHandler : MonoBehaviour {
     [SerializeField] GameObject VHS;
     TutorialScriptedEvent tutorialScriptedEvent;
     EndingScriptedEvent endingScriptedEvent;
-
-    bool eventTriggered;
+    DeathHandler deathHandler;
+    public bool eventTriggered;
     void Awake() {
         int numGameSessions = FindObjectsOfType<SceneHandler>().Length;
         if (numGameSessions > 1) {
@@ -29,7 +29,7 @@ public class SceneHandler : MonoBehaviour {
         player = FindObjectOfType<FirstPersonController>();
         tutorialScriptedEvent = FindObjectOfType<TutorialScriptedEvent>();
         endingScriptedEvent = FindObjectOfType<EndingScriptedEvent>();
-
+        deathHandler = FindObjectOfType<DeathHandler>();
         if (tutorialScriptedEvent != null) {
             eventTriggered = tutorialScriptedEvent.GetEventTriggered();
         }
@@ -56,8 +56,8 @@ public class SceneHandler : MonoBehaviour {
     }
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu" &&
-            !FindObjectOfType<DeathHandler>().IsDead() &&
-            eventTriggered) {
+            !deathHandler.IsDead() &&
+            !eventTriggered) {
             Debug.Log("escape pressed");
             menuOnOff = !menuOnOff;
             this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
@@ -79,7 +79,7 @@ public class SceneHandler : MonoBehaviour {
         }
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf &&
             SceneManager.GetActiveScene().name != "MainMenu" &&
-            !FindObjectOfType<DeathHandler>().IsDead() && eventTriggered) {
+              !deathHandler.IsDead() && !eventTriggered) {
             player.enabled = true;
             Time.timeScale = 1;
             SanitySlider.SetActive(true);
