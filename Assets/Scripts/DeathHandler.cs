@@ -14,6 +14,7 @@ public class DeathHandler : MonoBehaviour {
     public AudioClip attackSFX;
 
     bool isDead;
+    bool finallyDead;
     bool shadowSpawned;
     bool isKilledByAttack;
     [SerializeField] float speedRotation = 1f;
@@ -47,7 +48,8 @@ public class DeathHandler : MonoBehaviour {
             DeathAnimation();
         }
 
-        if (isKilledByAttack || Input.GetKeyDown(KeyCode.K)) {
+        if (isKilledByAttack && !finallyDead || Input.GetKeyDown(KeyCode.K)) {
+            finallyDead = true;
             isDead = true;
             
             DeathAnimation();
@@ -63,6 +65,7 @@ public class DeathHandler : MonoBehaviour {
     }
 
     private void DeathEvent() {
+     
         player.enabled = false;
         //audiosource.PlayOneShot(attackSFX, .2f);
         Cursor.lockState = CursorLockMode.None;
