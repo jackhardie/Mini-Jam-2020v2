@@ -10,6 +10,9 @@ public class DeathHandler : MonoBehaviour {
     FirstPersonController player;
     public GameObject cameraPlayer;
     public GameObject shadowSelf;
+    public AudioSource audiosource;
+    public AudioClip attackSFX;
+
     bool isDead;
     bool finallyDead;
     bool shadowSpawned;
@@ -48,6 +51,7 @@ public class DeathHandler : MonoBehaviour {
         if (isKilledByAttack && !finallyDead || Input.GetKeyDown(KeyCode.K)) {
             finallyDead = true;
             isDead = true;
+            
             DeathAnimation();
             DeathEvent();
             GetComponent<Animator>().SetBool("deadByFrontal", true);
@@ -57,11 +61,13 @@ public class DeathHandler : MonoBehaviour {
 
     private void DeathAnimation() {
         animatorDeathBySanity.enabled = true;
+        //audiosource.PlayOneShot(attackSFX, .02f);
     }
 
     private void DeathEvent() {
      
         player.enabled = false;
+        //audiosource.PlayOneShot(attackSFX, .2f);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
     }
