@@ -648,7 +648,7 @@ MonoBehaviour:
   speedRotation: 1
   shadowDistance: 1
   shadowSpawnTime: 2
-  animator: {fileID: 183630570}
+  animatorDeathBySanity: {fileID: 0}
 --- !u!95 &183630570
 Animator:
   serializedVersion: 4
@@ -872,7 +872,8 @@ PrefabInstance:
       propertyPath: m_Shadows.m_Type
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8772882848057540636, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
 --- !u!4 &1860345901619540196 stripped
 Transform:
@@ -921,8 +922,8 @@ MonoBehaviour:
   intensityrangeDecrease: 0.01
   flashlightSFX: {fileID: 0}
   sceneHandler: {fileID: 0}
-  batteryLevel: 100
   flashlightBar: {fileID: 0}
+  batteryLevel: 100
 --- !u!1001 &8675335737698181245
 PrefabInstance:
   m_ObjectHideFlags: 0
