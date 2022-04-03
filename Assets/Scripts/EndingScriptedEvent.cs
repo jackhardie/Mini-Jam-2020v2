@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.Audio;
 
 public class EndingScriptedEvent : MonoBehaviour
 {
@@ -37,6 +38,13 @@ public class EndingScriptedEvent : MonoBehaviour
     [SerializeField]
     GameObject bloodMessage;
 
+    public AudioSource audioSource;
+    public AudioSource lightAudioSource;
+    public AudioClip screamSFX;
+    public AudioClip lightscareSFX;
+    public AudioClip lightSFX;
+    public AudioClip lightFlickerSFX;
+
     bool eventTriggered;
     bool moveToPointB;
     bool moveToPointC;
@@ -45,6 +53,7 @@ public class EndingScriptedEvent : MonoBehaviour
         fpsController = player.GetComponent<FirstPersonController>();
         sanity = player.GetComponent<SanityManager>();
         stamina = player.GetComponent<Stamina>();
+        lightAudioSource.clip = lightSFX;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -81,11 +90,16 @@ public class EndingScriptedEvent : MonoBehaviour
         moveToPointC = true;
         if (moveToPointC)
         {
+            lightAudioSource.Play();
             yield return new WaitForSeconds(6f);
             moveToPointC = false;
+            audioSource.PlayOneShot(lightFlickerSFX, .4f);
             LightsOnOff();
+            lightAudioSource.Stop();
             yield return new WaitForSeconds(0.5f);
             LightsOnOff();
+            lightAudioSource.Play();
+            audioSource.PlayOneShot(screamSFX, .8f);
             shadowPlayer.SetActive(true);
         }
         
@@ -93,6 +107,7 @@ public class EndingScriptedEvent : MonoBehaviour
         LightsOnOff();
         shadowPlayer.SetActive(false);
         yield return new WaitForSeconds(2.5f);
+        audioSource.PlayOneShot(lightscareSFX, .6f);
         DisplayBloodText();
         LightsOnOff();
 
