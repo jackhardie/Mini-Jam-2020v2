@@ -44,11 +44,11 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
     public AudioClip lightSFX;
     public AudioClip lightFlickerSFX;
 
-    bool eventTriggered;
     bool moveToPointB;
     bool moveToPointC;
     private void Start()
     {
+        this.eventTriggered = false;
         fpsController = player.GetComponent<FirstPersonController>();
         sanity = player.GetComponent<SanityManager>();
         stamina = player.GetComponent<Stamina>();
@@ -185,9 +185,6 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         {
             MoveShadow();
         }
-    }
-    public bool GetEventTriggered() {
-        return eventTriggered;
     }
 
 }

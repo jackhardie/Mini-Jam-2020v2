@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CutSceneScriptedEvent : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public abstract class CutSceneScriptedEvent : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public bool eventTriggered;
+
+    public bool GetEventTriggered() {
+        return eventTriggered;
     }
 }

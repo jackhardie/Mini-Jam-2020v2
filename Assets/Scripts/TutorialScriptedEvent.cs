@@ -37,13 +37,13 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
     public AudioClip flashlightSFX;
     public AudioSource audioSource;
 
-    bool eventTriggered;
     bool flashLightOn;
     bool playerMoving;
     bool promptActive;
 
     private void Start()
     {
+        this.eventTriggered = false;
         fpsController = player.GetComponent<FirstPersonController>();
         flashLight = player.GetComponentInChildren<FlashLight>();
     }
@@ -172,8 +172,6 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
         }
     }
 
-    public bool GetEventTriggered() {
-        return eventTriggered;
-    }
+
 
 }
