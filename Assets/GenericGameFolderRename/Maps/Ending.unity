@@ -1983,10 +1983,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1771704786}
     m_Modifications:
-    - target: {fileID: 448832242, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: cfd4da415cce7b14881e8c18f2666415, type: 2}
     - target: {fileID: 7308406900919578673, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2034,10 +2030,6 @@ PrefabInstance:
     - target: {fileID: 7308406900919675921, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
       propertyPath: m_Name
       value: ShadowPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 7308406900919675921, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
@@ -5603,9 +5595,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8263249128584563922, guid: 8ec4dc617d02d194690602ce64028d01, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7c58149821a898f42bfb400e55f7a814, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec4dc617d02d194690602ce64028d01, type: 3}

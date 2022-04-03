@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7308406900919578673}
   m_Layer: 0
-  m_Name: ShadowPlayer
+  m_Name: ShadowPlayerScream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ Animator:
   m_GameObject: {fileID: 8105496602080561829}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4fde417fb13540f4b9fe2fed93c5bb31, type: 2}
+  m_Controller: {fileID: 9100000, guid: cfd4da415cce7b14881e8c18f2666415, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
