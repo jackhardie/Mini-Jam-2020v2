@@ -115,6 +115,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         LightsOnOff();
 
         yield return new WaitForSeconds(2.5f);
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
 
 
