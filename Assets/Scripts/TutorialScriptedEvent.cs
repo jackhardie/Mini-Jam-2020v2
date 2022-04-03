@@ -18,9 +18,16 @@ public class TutorialScriptedEvent : MonoBehaviour
     [SerializeField]
     GameObject mirroredPlayer;
     [SerializeField]
+    GameObject mirrorObject;
+    [SerializeField]
     GameObject shadowSelf;
     [SerializeField]
     Transform lockPoint;
+
+    [SerializeField]
+    GameObject keyObject;
+    [SerializeField]
+    GameObject keyTutorialTrigger;
 
     [SerializeField]
     GameObject[] bloodText;
@@ -69,7 +76,14 @@ public class TutorialScriptedEvent : MonoBehaviour
         yield return new WaitForSeconds(2f);
         ForceFlashlightOff();
         yield return new WaitForSeconds(1f);
+        BreakMirror();
         DisplayBloodText();
+        LightsOn();
+        RevealKey();
+        yield return new WaitForSeconds(3f);
+        LightsOff();
+        HideBloodText();
+        yield return new WaitForSeconds(0.5f);
         LightsOn();
         Destroy(this);
     }
@@ -105,6 +119,17 @@ public class TutorialScriptedEvent : MonoBehaviour
         audioSource.PlayOneShot(lightScareSFX, .8f);
     }
 
+    void BreakMirror()
+    {
+        mirrorObject.SetActive(true);
+    }
+
+    void RevealKey()
+    {
+        keyObject.SetActive(true);
+        keyTutorialTrigger.SetActive(true);
+    }
+
     void ForceFlashlightOff()
     {
         flashLight.ForceOffFlashlight();
@@ -116,6 +141,13 @@ public class TutorialScriptedEvent : MonoBehaviour
         foreach(GameObject canvas in bloodText)
         {
             canvas.SetActive(true);
+        }
+    }
+    void HideBloodText()
+    {
+        foreach (GameObject canvas in bloodText)
+        {
+            canvas.SetActive(false);
         }
     }
 
