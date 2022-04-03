@@ -114,7 +114,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         DisplayBloodText();
         LightsOnOff();
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(0);
 
 
