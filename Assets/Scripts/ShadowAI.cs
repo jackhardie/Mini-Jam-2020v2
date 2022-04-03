@@ -12,12 +12,13 @@ public class ShadowAI : MonoBehaviour {
     [SerializeField] float turnSPeed = 5f;
     NavMeshAgent navMeshAgent;
     Transform target;
-    float distanceToTarget = Mathf.Infinity;
+    DeathHandler deathHandler;
+    public float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
-
     void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<FirstPersonController>().transform;
+        deathHandler = FindObjectOfType<DeathHandler>();
     }
 
     void Update() {
@@ -56,8 +57,8 @@ public class ShadowAI : MonoBehaviour {
     }
 
     private void AttackTarget() {
+        deathHandler.SetIsKilledByAttack(true);
         GetComponent<Animator>().SetBool("attack", true);
-        Debug.Log("Player Attacked and killed");
     }
 
     private void ChaseTarget() {
