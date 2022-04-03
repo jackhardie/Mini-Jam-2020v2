@@ -24,6 +24,9 @@ public class DeathHandler : MonoBehaviour {
     public bool GetIsKilledByAttack() {
         return isKilledByAttack;
     }
+    public void SetIsKilledByAttack(bool isKilled) {
+         isKilledByAttack = isKilled;
+    }
 
     void Start() {
         isDead = false;

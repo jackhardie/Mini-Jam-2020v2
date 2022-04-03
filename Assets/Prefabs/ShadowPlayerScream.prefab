@@ -99,6 +99,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShadowSelf
       objectReference: {fileID: 0}
+    - target: {fileID: 5211508491986625813, guid: d5e951e3dc9da214cafbd85902ad4bad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bae87e79677ead249bfbc87ca3e758b3, type: 2}
+    - target: {fileID: 5211508491986625813, guid: d5e951e3dc9da214cafbd85902ad4bad, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75f91b63739463a4a9cc84802c4a5ec2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e951e3dc9da214cafbd85902ad4bad, type: 3}
 --- !u!1 &8105496602080561829 stripped
