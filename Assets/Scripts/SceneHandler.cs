@@ -49,37 +49,85 @@ public class SceneHandler : MonoBehaviour {
     }
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu" &&
-            !deathHandler.IsDead() &&
-            !scriptedEvent.GetEventTriggered()) {
-            Debug.Log("escape pressed");
-            menuOnOff = !menuOnOff;
-            this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
-            player.enabled = !menuOnOff;
-            if (menuOnOff) {
-                SanitySlider.SetActive(false);
-                StaminaSlider.SetActive(false);
-                FlashLightSlider.SetActive(false);
-                Time.timeScale = 0;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                VHS.SetActive(false);
+            !deathHandler.IsDead()) {
+            if (scriptedEvent != null)
+            {
+                if(scriptedEvent.GetEventTriggered() == false)
+                {
+                    Debug.Log("escape pressed");
+                    menuOnOff = !menuOnOff;
+                    this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
+                    player.enabled = !menuOnOff;
+                    if (menuOnOff)
+                    {
+                        SanitySlider.SetActive(false);
+                        StaminaSlider.SetActive(false);
+                        FlashLightSlider.SetActive(false);
+                        Time.timeScale = 0;
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                        VHS.SetActive(false);
+                    }
+                    else
+                    {
+                        Time.timeScale = 1;
+                        Cursor.lockState = CursorLockMode.Locked;
+                        Cursor.visible = false;
+                    }
+                }
             }
-            else {
-                Time.timeScale = 1;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+            else
+            {
+                Debug.Log("escape pressed");
+                menuOnOff = !menuOnOff;
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
+                player.enabled = !menuOnOff;
+                if (menuOnOff)
+                {
+                    SanitySlider.SetActive(false);
+                    StaminaSlider.SetActive(false);
+                    FlashLightSlider.SetActive(false);
+                    Time.timeScale = 0;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    VHS.SetActive(false);
+                }
+                else
+                {
+                    Time.timeScale = 1;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
+
+            
         }
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf &&
             SceneManager.GetActiveScene().name != "MainMenu" &&
-              !deathHandler.IsDead() && 
-              !scriptedEvent.GetEventTriggered()) {
-            player.enabled = true;
-            Time.timeScale = 1;
-            SanitySlider.SetActive(true);
-            StaminaSlider.SetActive(true);
-            FlashLightSlider.SetActive(true);
-            VHS.SetActive(true);
+              !deathHandler.IsDead()) {
+            if (scriptedEvent != null)
+            {
+                if(scriptedEvent.GetEventTriggered() == false)
+                {
+                    player.enabled = true;
+                    Time.timeScale = 1;
+                    SanitySlider.SetActive(true);
+                    StaminaSlider.SetActive(true);
+                    FlashLightSlider.SetActive(true);
+                    VHS.SetActive(true);
+                }
+            }
+            else
+            {
+                player.enabled = true;
+                Time.timeScale = 1;
+                SanitySlider.SetActive(true);
+                StaminaSlider.SetActive(true);
+                FlashLightSlider.SetActive(true);
+                VHS.SetActive(true);
+            }
+
+
         }
     }
 }
