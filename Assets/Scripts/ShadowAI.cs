@@ -7,14 +7,18 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class ShadowAI : MonoBehaviour {
 
-    [SerializeField] float chaseRange = 5f;
+    [SerializeField] float chaseRange = 10f;
+    [SerializeField] float aggroRange = 5f;
     [SerializeField] float attackRange = 2f;
-    [SerializeField] float turnSPeed = 5f;
+    [SerializeField] float turnSpeed = 5f;
     NavMeshAgent navMeshAgent;
     Transform target;
     DeathHandler deathHandler;
     public float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+
+    public bool hasBeenProvokedOnce = false;
+
     void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<FirstPersonController>().transform;
@@ -29,13 +33,16 @@ public class ShadowAI : MonoBehaviour {
             EngageTarget();
         }
 
-        if (distanceToTarget < chaseRange) {
+        if (distanceToTarget < aggroRange)
+        {
             isProvoked = true;
+            hasBeenProvokedOnce = true;
             GetComponent<Animator>().SetBool("idle", false);
         }
-        else {
-            GetComponent<Animator>().SetBool("idle", true);
-            isProvoked = false;
+        else if(hasBeenProvokedOnce && distanceToTarget > chaseRange)
+        {
+            print("Despawning");
+            Destroy(this.gameObject);
         }
     }
 
@@ -53,7 +60,7 @@ public class ShadowAI : MonoBehaviour {
     void FaceTarget() {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSPeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     private void AttackTarget() {
