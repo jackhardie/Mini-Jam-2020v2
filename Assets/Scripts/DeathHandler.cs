@@ -29,13 +29,18 @@ public class DeathHandler : MonoBehaviour {
     void Update() {
         if (sanityManager.GetCurrentSanity() < 0 && !isDead || Input.GetKeyDown(KeyCode.P)) {
             isDead = true;
-            animator.enabled = true;
+            DeathAnimation();
             StartCoroutine("SpawnShadow");
         }
         if (isDead)
             DeathEvent();
 
     }
+
+    private void DeathAnimation() {
+        animator.enabled = true;
+    }
+
     private void DeathEvent() {
         player.enabled = false;
         Cursor.lockState = CursorLockMode.None;
