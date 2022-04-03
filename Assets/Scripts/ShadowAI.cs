@@ -14,7 +14,6 @@ public class ShadowAI : MonoBehaviour {
     Transform target;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
-    [SerializeField] bool isAlive = true;
 
     void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -22,27 +21,22 @@ public class ShadowAI : MonoBehaviour {
     }
 
     void Update() {
-        if (isAlive) {
 
-            distanceToTarget = Vector3.Distance(transform.position, target.position);
+        distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-            if (isProvoked) {
-                EngageTarget();
-            }
+        if (isProvoked) {
+            EngageTarget();
+        }
 
-            if (distanceToTarget < chaseRange) {
-                isProvoked = true;
-            }
-            else {
-                GetComponent<Animator>().SetTrigger("idle");
-                isProvoked = false;
-            }
+        if (distanceToTarget < chaseRange) {
+            isProvoked = true;
+            GetComponent<Animator>().SetBool("idle", false);
         }
         else {
-            navMeshAgent.enabled = false;
-            GetComponent<Animator>().SetBool("attack", false);
+            GetComponent<Animator>().SetBool("idle", true);
+            isProvoked = false;
         }
-            }
+    }
 
     void EngageTarget() {
         FaceTarget();
