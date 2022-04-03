@@ -11,6 +11,7 @@ public class DeathHandler : MonoBehaviour {
     public GameObject cameraPlayer;
     public GameObject shadowSelf;
     bool isDead;
+    bool finallyDead;
     bool shadowSpawned;
     bool isKilledByAttack;
     [SerializeField] float speedRotation = 1f;
@@ -44,7 +45,8 @@ public class DeathHandler : MonoBehaviour {
             DeathAnimation();
         }
 
-        if (isKilledByAttack || Input.GetKeyDown(KeyCode.K)) {
+        if (isKilledByAttack && !finallyDead || Input.GetKeyDown(KeyCode.K)) {
+            finallyDead = true;
             isDead = true;
             DeathAnimation();
             DeathEvent();
@@ -58,6 +60,7 @@ public class DeathHandler : MonoBehaviour {
     }
 
     private void DeathEvent() {
+     
         player.enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
