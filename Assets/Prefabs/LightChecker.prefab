@@ -45,9 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightCheckTextures:
-  - {fileID: 8400000, guid: 7a2113bbedc27194cb4237c69f82837c, type: 2}
-  - {fileID: 8400000, guid: 04ca83a82346af0419d352fef589596e, type: 2}
   - {fileID: 8400000, guid: 0c183f945ea99ca4a8e8abf772a4519d, type: 2}
-  lightLevel: 0
   realLightLevel: 0
-  threshold: 200000
+  threshold: 2500
+  deadlyLightLevel: 2

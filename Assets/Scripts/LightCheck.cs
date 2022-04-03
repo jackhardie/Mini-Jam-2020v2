@@ -8,6 +8,7 @@ public class LightCheck : MonoBehaviour
     float lightLevel;
     public int realLightLevel;
     float sum;
+    [SerializeField]
     float threshold = 200000;
     [SerializeField]
     int deadlyLightLevel;

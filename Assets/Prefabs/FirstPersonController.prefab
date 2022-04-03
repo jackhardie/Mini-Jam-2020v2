@@ -813,13 +813,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3022587474177770098, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022587474177770099, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 3022587474177770099, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 3022587474177770099, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.831
+      value: 0.634
       objectReference: {fileID: 0}
     - target: {fileID: 3022587474177770100, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_TargetTexture
@@ -830,8 +838,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3022587474177770100, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022587474177770100, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022587474677449883, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022587475625645402, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3022587475625645403, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -839,11 +859,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3022587475625645403, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.861
+      value: -0.506
       objectReference: {fileID: 0}
     - target: {fileID: 3022587475625645404, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: orthographic size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022587475625645404, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3022587475625645404, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -896,6 +920,10 @@ PrefabInstance:
     - target: {fileID: 8031989675502265848, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
       propertyPath: m_Name
       value: PlayerLightCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675335737588056504, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8036f18cc79eb4d97d416b1f9644e7, type: 3}
