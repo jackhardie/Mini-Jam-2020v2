@@ -5540,6 +5540,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2376003059045653778, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5275784272946720145, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: m_TagString
       value: FlashlightBar
       objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033243, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}

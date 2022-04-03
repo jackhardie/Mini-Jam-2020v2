@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class EndingScriptedEvent : CutSceneScriptedEvent {
     FirstPersonController fpsController;
@@ -36,6 +37,8 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
     Light finalLight;
     [SerializeField]
     GameObject bloodMessage;
+    [SerializeField]
+    Transform lookAtPoint;
 
     public AudioSource audioSource;
     public AudioSource lightAudioSource;
@@ -91,6 +94,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         {
             lightAudioSource.Play();
             yield return new WaitForSeconds(6f);
+            player.GetComponentInChildren<Camera>().transform.LookAt(lookAtPoint.position);
             moveToPointC = false;
             audioSource.PlayOneShot(lightFlickerSFX, .4f);
             LightsOnOff();
@@ -109,6 +113,9 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         audioSource.PlayOneShot(lightscareSFX, .6f);
         DisplayBloodText();
         LightsOnOff();
+
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(0);
 
 
     }
