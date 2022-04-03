@@ -597,10 +597,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77bfa0a5f14d724ab0d60b359749624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalStamina: 10
+  totalStamina: 100
   currentStamina: 0
-  staminaRunThreshold: 1.4
-  gainStaminaOverTime: 1
+  staminaRunThreshold: 14
+  gainStaminaOverTime: 2.5
   loseStaminaOverTime: 5
   resting: 0
 --- !u!114 &829903809
@@ -648,7 +648,7 @@ MonoBehaviour:
   speedRotation: 1
   shadowDistance: 1
   shadowSpawnTime: 2
-  animatorDeathBySanity: {fileID: 0}
+  animatorDeathBySanity: {fileID: 183630570}
 --- !u!95 &183630570
 Animator:
   serializedVersion: 4

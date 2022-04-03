@@ -79,7 +79,7 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
         DisplayBloodText();
         LightsOn();
         RevealKey();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
         LightsOff();
         HideBloodText();
         yield return new WaitForSeconds(0.5f);

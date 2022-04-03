@@ -8,10 +8,10 @@ public class StaminaSlider : MonoBehaviour {
     Stamina stamina;
     private void Start() {
         stamina = FindObjectOfType<Stamina>();
-        staminaBar.fillAmount = stamina.GetCurrentStamina();
+        staminaBar.fillAmount = stamina.GetCurrentStamina() / 100f;
     }
 
     void Update() {
-        staminaBar.fillAmount = stamina.GetCurrentStamina() / 10f;
+        staminaBar.fillAmount = stamina.GetCurrentStamina() / 100f;
     }
 }

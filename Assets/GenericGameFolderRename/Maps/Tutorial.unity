@@ -6951,6 +6951,10 @@ PrefabInstance:
       propertyPath: flashlightSFX
       value: 
       objectReference: {fileID: 865573868}
+    - target: {fileID: 1860345902811389977, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: spotAnglerangeDecrease
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6650728175614615979, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: lightChecker
       value: 
@@ -10558,7 +10562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580126504}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0.5, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11594,7 +11598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11632,6 +11636,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: MirroredPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 1860345901871476154, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211508493291354946, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4b9d1da5840d4b4dba6b268e7450744, type: 2}
+    - target: {fileID: 5211508493291354946, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: caf1976b2d675aa4ca722b6755c3fdec, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03fb454c8823ef544ab6472e3d9338ff, type: 3}
 --- !u!1001 &1844767628

@@ -253,12 +253,12 @@ MonoBehaviour:
   spotLightCookieThree: {fileID: 197558}
   rangeDecrease: 0.1
   batteryDecrease: 1
-  spotAnglerangeDecrease: 0.5
+  spotAnglerangeDecrease: 0.25
   intensityrangeDecrease: 0.01
   flashlightSFX: {fileID: 0}
   sceneHandler: {fileID: 0}
-  batteryLevel: 100
   flashlightBar: {fileID: 0}
+  batteryLevel: 100
 --- !u!1 &187386
 GameObject:
   m_ObjectHideFlags: 0
