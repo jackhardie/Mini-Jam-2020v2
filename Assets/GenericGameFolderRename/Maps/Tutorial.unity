@@ -12697,6 +12697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
+    - target: {fileID: 6504652817793750763, guid: 04b574bf4c3c99748a350346bedd514e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b574bf4c3c99748a350346bedd514e, type: 3}
 --- !u!1 &2044051215
@@ -12744,6 +12748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f093b0c2f8785143b027dd331d13b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventTriggered: 0
   promptText: {fileID: 635600944}
   sceneLights:
   - {fileID: 2064592979}
