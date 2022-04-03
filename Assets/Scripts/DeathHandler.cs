@@ -29,12 +29,10 @@ public class DeathHandler : MonoBehaviour {
     void Update() {
         if (sanityManager.GetCurrentSanity() < 0 && !isDead || Input.GetKeyDown(KeyCode.P)) {
             isDead = true;
+            DeathEvent();
             DeathAnimation();
             StartCoroutine("SpawnShadow");
         }
-        if (isDead)
-            DeathEvent();
-
     }
 
     private void DeathAnimation() {

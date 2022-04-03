@@ -18,4 +18,11 @@ public class FadeBlackScreen : MonoBehaviour
             animator.enabled = true;
         }
     }
+
+    public void EnableGameOverScreen() {
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
+
 }
