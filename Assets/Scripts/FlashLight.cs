@@ -16,14 +16,20 @@ public class FlashLight : MonoBehaviour {
     [SerializeField] float spotAnglerangeDecrease = 0.2f;
     [SerializeField] float intensityrangeDecrease = 0.01f;
 
-    [SerializeField]
     AudioSource flashlightSFX;
-    [SerializeField]
     SceneHandler sceneHandler;
-    
-    public float batteryLevel = 100f;
-    [SerializeField]
     Image flashlightBar;
+
+    public float batteryLevel = 100f;
+
+
+
+    private void Start()
+    {
+        flashlightSFX = GameObject.FindGameObjectWithTag("FlashlightSFX").GetComponent<AudioSource>();
+        sceneHandler = GameObject.FindGameObjectWithTag("SceneHandler").GetComponent<SceneHandler>();
+        flashlightBar = GameObject.FindGameObjectWithTag("FlashlightBar").GetComponent<Image>();
+    }
 
     private void OnEnable()
     {
