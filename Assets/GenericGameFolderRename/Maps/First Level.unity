@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 2bb401df66f451f4f8628b6808d848ee, type: 2}
 --- !u!1 &9071860
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -699,6 +699,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -1034,6 +1038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &96404804 stripped
@@ -1095,6 +1103,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -1158,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &158996547 stripped
@@ -1219,6 +1235,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -1473,6 +1493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Corner_With_Bevel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
 --- !u!4 &219121649 stripped
@@ -1535,6 +1559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &226011172 stripped
@@ -1551,7 +1579,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5698182489254889829, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5698182489254889829, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1658,6 +1686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &245365246 stripped
@@ -1719,6 +1751,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -1973,6 +2009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &313834885 stripped
@@ -2034,6 +2074,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -2097,6 +2141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &320470785 stripped
@@ -2158,6 +2206,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -2221,6 +2273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &359904487 stripped
@@ -2282,6 +2338,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -2345,6 +2405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &413801012 stripped
@@ -2352,6 +2416,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
   m_PrefabInstance: {fileID: 413801011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &440105846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919578673, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7308406900919675921, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_Name
+      value: ShadowChaser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eac6be269adfd224692161048d37f8ba, type: 3}
 --- !u!1001 &472796923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2406,6 +2527,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Corner_With_Bevel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
@@ -2469,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &494394214 stripped
@@ -2530,6 +2659,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -2975,6 +3108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &579187621 stripped
@@ -3227,6 +3364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Socket (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
@@ -3708,6 +3849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &706222912 stripped
@@ -3769,6 +3914,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -3832,6 +3981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_Corner_With_Bevel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
 --- !u!4 &719939881 stripped
@@ -3893,6 +4046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -3956,6 +4113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &738575975 stripped
@@ -4018,6 +4179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &755568940 stripped
@@ -4079,6 +4244,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -4175,6 +4344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &868294244 stripped
@@ -4236,6 +4409,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -4299,6 +4476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &909329286 stripped
@@ -4361,6 +4542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &921799321 stripped
@@ -4422,6 +4607,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Socket (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
@@ -4676,6 +4865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &951369561 stripped
@@ -4737,6 +4930,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
       propertyPath: m_Name
       value: SM_Door_Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092393606795552476, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
@@ -4800,6 +5001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &1012302637 stripped
@@ -4862,6 +5067,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Door_Frame (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092393606795552476, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951f36b8c42ca8041b8a0e559111e800, type: 3}
 --- !u!4 &1025252924 stripped
@@ -4923,6 +5136,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -4996,7 +5213,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1190587677
 PrefabInstance:
@@ -5052,6 +5269,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -5115,6 +5336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &1208980944 stripped
@@ -5176,6 +5401,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -5536,6 +5765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1326314005 stripped
@@ -5598,6 +5831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1395511938 stripped
@@ -5659,6 +5896,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -5913,6 +6154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &1493178434 stripped
@@ -5975,6 +6220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Socket (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
 --- !u!4 &1507092638 stripped
@@ -6036,6 +6285,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -6290,6 +6543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &1598592384 stripped
@@ -6352,6 +6609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1624956055 stripped
@@ -6413,6 +6674,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -6480,6 +6745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wal_Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a165291d14cdc24e8a5d19a72e7371d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a165291d14cdc24e8a5d19a72e7371d, type: 3}
 --- !u!4 &1644824547 stripped
@@ -6542,6 +6811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1663154033 stripped
@@ -6603,6 +6876,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
@@ -6677,6 +6954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
 --- !u!4 &1769205119 stripped
@@ -6738,6 +7019,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -6801,6 +7086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1786761616 stripped
@@ -6863,6 +7152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1797737160 stripped
@@ -6883,11 +7176,11 @@ GameObject:
   - component: {fileID: 1860800261}
   - component: {fileID: 1860800260}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: MainFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1860800260
 BoxCollider:
@@ -6965,7 +7258,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866675601
 GameObject:
@@ -7212,6 +7505,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
@@ -7528,6 +7825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1966031359 stripped
@@ -7589,6 +7890,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
       propertyPath: m_Name
       value: SM_Wall_Corner_With_Bevel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd49d822a87a07c46af5f10fb43af8d5, type: 3}
@@ -7843,6 +8148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &1976745282 stripped
@@ -7976,6 +8285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &2051512458 stripped
@@ -8037,6 +8350,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Socket (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44426363705799e4d8f9e024beefb7e5, type: 3}
@@ -8111,6 +8428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &2069051848 stripped
@@ -8173,6 +8494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wall_With_Bevel_No_Roof (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b2a82e412860e4ca75aabf462be7b6, type: 3}
 --- !u!4 &2087356293 stripped
@@ -8234,6 +8559,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
       propertyPath: m_Name
       value: SM_Wall_With_Bevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6c3717df0132524aaffbf642b093d7e, type: 3}
