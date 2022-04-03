@@ -36,6 +36,7 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
     public AudioClip lightScareSFX;
     public AudioClip flashlightSFX;
     public AudioSource audioSource;
+    public AudioClip heavyScareSFX;
 
     bool flashLightOn;
     bool playerMoving;
@@ -65,6 +66,7 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
         yield return new WaitForSeconds(2f);
         playerMoving = false;
         mirroredPlayer.SetActive(true);
+        audioSource.PlayOneShot(lightScareSFX, .8f);
         yield return new WaitForSeconds(2f);
         LightsOff();
         audioSource.PlayOneShot(flashlightSFX, .8f);
@@ -72,6 +74,7 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
         DisplayPrompt();
         while(!flashLightOn) yield return null;
         ShowShadowSelf();
+        audioSource.PlayOneShot(heavyScareSFX, .8f);
         yield return new WaitForSeconds(2f);
         ForceFlashlightOff();
         yield return new WaitForSeconds(1f);
@@ -115,7 +118,7 @@ public class TutorialScriptedEvent : CutSceneScriptedEvent {
         promptText.SetActive(false);
         promptActive = false;
         shadowSelf.SetActive(true);
-        audioSource.PlayOneShot(lightScareSFX, .8f);
+        
     }
 
     void BreakMirror()
