@@ -41,9 +41,9 @@ public class ShadowAI : MonoBehaviour {
 
     void EngageTarget() {
         FaceTarget();
-        if (distanceToTarget >= navMeshAgent.stoppingDistance) {
+        if (distanceToTarget >= navMeshAgent.stoppingDistance && !deathHandler.GetIsKilledByAttack()) {
             ChaseTarget();
-        }
+        } else
         if (distanceToTarget <= navMeshAgent.stoppingDistance) {
             AttackTarget();
         }
