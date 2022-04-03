@@ -838,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10857002, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
       propertyPath: m_Intensity
-      value: 7
+      value: 7.02
       objectReference: {fileID: 0}
     - target: {fileID: 10857002, guid: 6241ef40758dd404b91e848e07dda193, type: 3}
       propertyPath: m_SpotAngle
@@ -917,7 +917,7 @@ MonoBehaviour:
   spotLightCookieThree: {fileID: 1860345901619797814}
   rangeDecrease: 0.1
   batteryDecrease: 1
-  spotAnglerangeDecrease: 1
+  spotAnglerangeDecrease: 0.5
   intensityrangeDecrease: 0.01
   flashlightSFX: {fileID: 0}
   sceneHandler: {fileID: 0}

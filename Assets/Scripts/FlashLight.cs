@@ -13,7 +13,7 @@ public class FlashLight : MonoBehaviour {
     [SerializeField] GameObject spotLightCookieThree;
     [SerializeField] float rangeDecrease = 0.1f;
     [SerializeField] float batteryDecrease = 1f;
-    [SerializeField] float spotAnglerangeDecrease = 1f;
+    [SerializeField] float spotAnglerangeDecrease = 0.2f;
     [SerializeField] float intensityrangeDecrease = 0.01f;
 
     [SerializeField]

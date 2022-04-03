@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 470116}
+  - component: {fileID: 8772882848057540636}
   m_Layer: 0
   m_Name: Flashlight_GameObject
   m_TagString: Untagged
@@ -234,6 +235,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8772882848057540636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e4a9a09dd5a6644ae6e0f7750da501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnOnOff: 0
+  spotLightCookieOne: {fileID: 129314}
+  spotLightCookieTwo: {fileID: 187386}
+  spotLightCookieThree: {fileID: 197558}
+  rangeDecrease: 0.1
+  batteryDecrease: 1
+  spotAnglerangeDecrease: 0.5
+  intensityrangeDecrease: 0.01
+  flashlightSFX: {fileID: 0}
+  sceneHandler: {fileID: 0}
+  batteryLevel: 100
+  flashlightBar: {fileID: 0}
 --- !u!1 &187386
 GameObject:
   m_ObjectHideFlags: 0
