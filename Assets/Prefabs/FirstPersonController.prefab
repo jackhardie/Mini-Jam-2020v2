@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 829903809}
   - component: {fileID: 6650728175614615979}
   - component: {fileID: 183630569}
+  - component: {fileID: 2661801057244838856}
   m_Layer: 3
   m_Name: FirstPersonController
   m_TagString: Player
@@ -643,11 +644,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPlayer: {fileID: 1860345901871476152}
-  shadowSelf: {fileID: 7308406900919675921, guid: b6b1925dc23907d48ac4d94fd5a6b767, type: 3}
+  shadowSelf: {fileID: 7308406900919675921, guid: cfd9e5a31156c7c419a10fd4590f46c9, type: 3}
   speedRotation: 1
-  shadowDistance: 3
+  shadowDistance: 1
   shadowSpawnTime: 2
-  animator: {fileID: 0}
+  animator: {fileID: 2661801057244838856}
+--- !u!95 &2661801057244838856
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860345901871476154}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 989e1305af2945f468e998a2404f49d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1860345901619731584
 PrefabInstance:
   m_ObjectHideFlags: 0

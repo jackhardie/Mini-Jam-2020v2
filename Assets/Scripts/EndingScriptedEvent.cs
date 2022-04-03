@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.Audio;
 
-public class EndingScriptedEvent : MonoBehaviour
-{
+public class EndingScriptedEvent : CutSceneScriptedEvent {
     FirstPersonController fpsController;
     SanityManager sanity;
     [SerializeField]

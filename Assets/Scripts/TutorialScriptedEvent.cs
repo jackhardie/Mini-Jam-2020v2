@@ -6,8 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Audio;
 
-public class TutorialScriptedEvent : MonoBehaviour
-{
+public class TutorialScriptedEvent : CutSceneScriptedEvent {
     FirstPersonController fpsController;
     [SerializeField]
     GameObject promptText;
