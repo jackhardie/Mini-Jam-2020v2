@@ -863,7 +863,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5698182489254889829, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5698182489254889829, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -994,7 +994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5619330324148204535, guid: c14c1752eec0e734194a186cbb635da1, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5619330324148204535, guid: c14c1752eec0e734194a186cbb635da1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1573,6 +1573,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 448832242, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: ff66e23ff24d6054bb6949a47d7faf21, type: 3}
+    - target: {fileID: 448832242, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'Idle'\n\tFrom
+        animation clip 'Walk'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 448832242, guid: eac6be269adfd224692161048d37f8ba, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 553331196, guid: eac6be269adfd224692161048d37f8ba, type: 3}
       propertyPath: chaseRange
       value: 8
@@ -1994,7 +2013,7 @@ Transform:
   - {fileID: 1952142935}
   - {fileID: 799551636}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &706222911
 PrefabInstance:
@@ -3224,7 +3243,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1100125580
 PrefabInstance:
@@ -3239,7 +3258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4456004096191131022, guid: 540de91fcf2a4bd4fb25e39ebb6a315a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4456004096191131022, guid: 540de91fcf2a4bd4fb25e39ebb6a315a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3296,7 +3315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471490013476860949, guid: 9b41e191c2fce544ba83c280f2a9b073, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 471490013476860949, guid: 9b41e191c2fce544ba83c280f2a9b073, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3584,7 +3603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033249, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033249, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5028,7 +5047,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1868310412
 PrefabInstance:
@@ -5374,7 +5393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8027443628883540263, guid: 27f0c6b7f696356469e6b05652f56ff6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8027443628883540263, guid: 27f0c6b7f696356469e6b05652f56ff6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5823,5 +5842,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
