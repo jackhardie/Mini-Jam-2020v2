@@ -32,10 +32,10 @@ public class SceneHandler : MonoBehaviour {
     }
 
     public void MainMenu() {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
     public void TutorialLevel() {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene(1);
     }
 
     public void RestartLevel() {
@@ -71,8 +71,8 @@ public class SceneHandler : MonoBehaviour {
                     else
                     {
                         Time.timeScale = 1;
-                        Cursor.lockState = CursorLockMode.Locked;
                         Cursor.visible = false;
+                        Cursor.lockState = CursorLockMode.Locked;
                     }
                 }
             }

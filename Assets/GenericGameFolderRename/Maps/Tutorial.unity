@@ -3366,7 +3366,7 @@ GameObject:
   - component: {fileID: 535794641}
   m_Layer: 0
   m_Name: Sanity Audio Source
-  m_TagString: Untagged
+  m_TagString: SanitySFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5347,7 +5347,7 @@ GameObject:
   - component: {fileID: 865573869}
   m_Layer: 0
   m_Name: Flashlight Audio Source
-  m_TagString: Untagged
+  m_TagString: FlashlightSFX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6901,7 +6901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1860345901871051162, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13809,6 +13809,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2376003059045653778, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: m_TagString
+      value: FlashlightBar
+      objectReference: {fileID: 0}
     - target: {fileID: 7440148358815033243, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_Name
       value: UIPlayer
@@ -13901,6 +13905,10 @@ PrefabInstance:
       propertyPath: VHS
       value: 
       objectReference: {fileID: 84385993}
+    - target: {fileID: 8089301954257772025, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: m_TagString
+      value: SceneHandler
+      objectReference: {fileID: 0}
     - target: {fileID: 8536644411050962416, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: audioSource
       value: 
