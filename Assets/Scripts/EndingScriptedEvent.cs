@@ -116,6 +116,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
 
         yield return new WaitForSeconds(2.5f);
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
 
 
