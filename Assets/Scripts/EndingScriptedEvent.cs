@@ -42,10 +42,12 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
 
     public AudioSource audioSource;
     public AudioSource lightAudioSource;
+    public AudioSource spookySource;
     public AudioClip screamSFX;
     public AudioClip lightscareSFX;
     public AudioClip lightSFX;
     public AudioClip lightFlickerSFX;
+    public AudioClip spookySFX;
 
     bool moveToPointB;
     bool moveToPointC;
@@ -56,6 +58,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         sanity = player.GetComponent<SanityManager>();
         stamina = player.GetComponent<Stamina>();
         lightAudioSource.clip = lightSFX;
+        spookySource.clip = spookySFX;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -63,7 +66,9 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
         if (other.tag == "Player" && !eventTriggered)
         {
             eventTriggered = true;
+            spookySource.Play();
             StartCoroutine(ScriptedEvent());
+
 
         }
     }
@@ -99,6 +104,7 @@ public class EndingScriptedEvent : CutSceneScriptedEvent {
             audioSource.PlayOneShot(lightFlickerSFX, .4f);
             LightsOnOff();
             lightAudioSource.Stop();
+            spookySource.Stop();
             yield return new WaitForSeconds(0.5f);
             LightsOnOff();
             lightAudioSource.Play();
