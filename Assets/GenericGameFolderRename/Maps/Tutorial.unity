@@ -7245,6 +7245,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: attackSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: ead09de97fe86db45a5a38933585a089, type: 3}
+    - target: {fileID: 183630569, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
+      propertyPath: audiosource
+      value: 
+      objectReference: {fileID: 1051607460}
     - target: {fileID: 829903809, guid: 24d9e943610a64b408cafae16218d52a, type: 3}
       propertyPath: keySFX
       value: 
