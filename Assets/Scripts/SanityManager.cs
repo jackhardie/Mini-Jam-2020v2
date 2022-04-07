@@ -12,13 +12,13 @@ public class SanityManager : MonoBehaviour {
     float gainSanityOverTime = 1f;
     float loseSanityOverTime = 3f;
     float vhsEffectIntensity;
-    FirstPersonController player;
+    OVRPlayerController player;
     FlashLight flashlight;
 
 
     private void Start() {
         currentSanity = totalSanity;
-        player = FindObjectOfType<FirstPersonController>();
+        player = FindObjectOfType<OVRPlayerController>();
         flashlight = player.GetComponentInChildren<FlashLight>();
     }
 

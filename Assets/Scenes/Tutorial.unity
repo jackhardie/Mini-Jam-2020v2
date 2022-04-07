@@ -14594,6 +14594,10 @@ PrefabInstance:
       propertyPath: VHS
       value: 
       objectReference: {fileID: 84385993}
+    - target: {fileID: 8089301954257772023, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+      propertyPath: scriptedEvent
+      value: 
+      objectReference: {fileID: 2044051217}
     - target: {fileID: 8089301954257772025, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
       propertyPath: m_TagString
       value: SceneHandler

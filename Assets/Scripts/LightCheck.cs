@@ -13,7 +13,7 @@ public class LightCheck : MonoBehaviour
     [SerializeField]
     int deadlyLightLevel;
 
-    // Update is called once per frame
+  
     void Update()
     {
         sum = 0;

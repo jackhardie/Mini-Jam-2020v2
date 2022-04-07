@@ -19,11 +19,11 @@ public class Stamina : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKey(KeyCode.LeftShift) && !resting) { //running
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, OVRInput.Controller.LTouch)!=0f && !resting) { //running
             currentStamina -= loseStaminaOverTime * Time.deltaTime;
             if (currentStamina < staminaRunThreshold) {
                 resting = true;
-                player.SetRunSpeed(4f);
+                player.SetRunSpeed(5f);
             }
         }
         else {
@@ -31,7 +31,7 @@ public class Stamina : MonoBehaviour {
             if (currentStamina > totalStamina) {
                 currentStamina = totalStamina; //can't go above the max stamina
                 resting = false;
-                player.SetRunSpeed(10f);
+                player.SetRunSpeed(1f);
             }
         }
     }
