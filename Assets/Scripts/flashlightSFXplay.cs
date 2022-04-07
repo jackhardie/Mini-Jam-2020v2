@@ -8,10 +8,10 @@ public class flashlightSFXplay : MonoBehaviour
     public AudioSource audioSource;
 
 
-    // Update is called once per frame
+    // VR CHANGE
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (OVRInput.GetDown(OVRInput.RawButton.A))
         {
             audioSource.PlayOneShot(flashlightSFX, .8f);
         }

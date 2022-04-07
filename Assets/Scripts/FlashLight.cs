@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class FlashLight : MonoBehaviour {
 
-
+    //VR CHANGE
     public bool turnOnOff = false;
     [SerializeField] GameObject spotLightCookieOne;
     [SerializeField] GameObject spotLightCookieTwo;
@@ -42,7 +42,7 @@ public class FlashLight : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.E)) {
+        if (OVRInput.GetDown(OVRInput.RawButton.A)) {
             turnOnOff = !turnOnOff;
             spotLightCookieOne.SetActive(turnOnOff);
             spotLightCookieTwo.SetActive(turnOnOff);

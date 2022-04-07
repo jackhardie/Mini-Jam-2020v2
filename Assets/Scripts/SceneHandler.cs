@@ -6,13 +6,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class SceneHandler : MonoBehaviour {
     public bool menuOnOff;
-    FirstPersonController player;
+    OVRPlayerController player;
     [SerializeField] GameObject SanitySlider;
     [SerializeField] GameObject StaminaSlider;
     [SerializeField] GameObject FlashLightSlider;
-    [SerializeField] GameObject VHS;
-  public  CutSceneScriptedEvent scriptedEvent;
-  
+    //   [SerializeField] GameObject VHS;
+    public CutSceneScriptedEvent scriptedEvent;
+
     DeathHandler deathHandler;
     public bool eventTriggered;
     void Awake() {
@@ -26,7 +26,7 @@ public class SceneHandler : MonoBehaviour {
     }
 
     private void Start() {
-        player = FindObjectOfType<FirstPersonController>();
+        player = FindObjectOfType<OVRPlayerController>();
         scriptedEvent = FindObjectOfType<CutSceneScriptedEvent>();
         deathHandler = FindObjectOfType<DeathHandler>();
     }
@@ -50,81 +50,71 @@ public class SceneHandler : MonoBehaviour {
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "MainMenu" &&
             !deathHandler.IsDead()) {
-            if (scriptedEvent != null)
-            {
-                if(scriptedEvent.GetEventTriggered() == false)
-                {
+            if (scriptedEvent != null) {
+                if (scriptedEvent.GetEventTriggered() == false) {
                     Debug.Log("escape pressed");
                     menuOnOff = !menuOnOff;
                     this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
                     player.enabled = !menuOnOff;
-                    if (menuOnOff)
-                    {
+                    if (menuOnOff) {
                         SanitySlider.SetActive(false);
                         StaminaSlider.SetActive(false);
                         FlashLightSlider.SetActive(false);
                         Time.timeScale = 0;
                         Cursor.lockState = CursorLockMode.None;
                         Cursor.visible = true;
-                        VHS.SetActive(false);
+                        //   VHS.SetActive(false);
                     }
-                    else
-                    {
+                    else {
                         Time.timeScale = 1;
                         Cursor.visible = false;
                         Cursor.lockState = CursorLockMode.Locked;
                     }
                 }
             }
-            else
-            {
+            else {
                 Debug.Log("escape pressed");
                 menuOnOff = !menuOnOff;
                 this.gameObject.transform.GetChild(0).gameObject.SetActive(menuOnOff);
                 player.enabled = !menuOnOff;
-                if (menuOnOff)
-                {
+                if (menuOnOff) {
                     SanitySlider.SetActive(false);
                     StaminaSlider.SetActive(false);
                     FlashLightSlider.SetActive(false);
                     Time.timeScale = 0;
                     Cursor.lockState = CursorLockMode.None;
                     Cursor.visible = true;
-                    VHS.SetActive(false);
+                    //    VHS.SetActive(false);
                 }
-                else
-                {
+                else {
                     Time.timeScale = 1;
                     Cursor.lockState = CursorLockMode.Locked;
                     Cursor.visible = false;
                 }
             }
 
-            
+
         }
         if (!this.gameObject.transform.GetChild(0).gameObject.activeSelf &&
             SceneManager.GetActiveScene().name != "MainMenu" &&
               !deathHandler.IsDead()) {
-            if (scriptedEvent != null)
-            {
-                if(scriptedEvent.GetEventTriggered() == false)
-                {
+            if (scriptedEvent != null) {
+                if (scriptedEvent.GetEventTriggered() == false) {
                     player.enabled = true;
                     Time.timeScale = 1;
                     SanitySlider.SetActive(true);
                     StaminaSlider.SetActive(true);
                     FlashLightSlider.SetActive(true);
-                    VHS.SetActive(true);
+                    //  VHS.SetActive(true);
                 }
             }
-            else
-            {
+            else {
                 player.enabled = true;
                 Time.timeScale = 1;
                 SanitySlider.SetActive(true);
                 StaminaSlider.SetActive(true);
                 FlashLightSlider.SetActive(true);
-                VHS.SetActive(true);
+                //    VHS.SetActive(true); active VHS when is time, now I dont use with VR
             }
 
 

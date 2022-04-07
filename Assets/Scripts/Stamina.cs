@@ -11,11 +11,11 @@ public class Stamina : MonoBehaviour {
     public float gainStaminaOverTime = 1f;
     public float loseStaminaOverTime = 3f;
     public bool resting;
-    FirstPersonController player;
+    OVRPlayerController player;
 
     private void Awake() {
         currentStamina = totalStamina;
-        player = FindObjectOfType<FirstPersonController>();
+        player = FindObjectOfType<OVRPlayerController>();
     }
 
     void Update() {

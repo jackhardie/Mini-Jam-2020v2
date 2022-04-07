@@ -13,9 +13,9 @@ public class PickUpItem : MonoBehaviour {
     public bool GetHasTheKey() {
         return hasTheKey;
     }
-
+    //vr change
     private void OnTriggerStay(Collider other) {
-        if (Input.GetKeyDown(KeyCode.Q) && other.tag == "Key") {
+        if (OVRInput.GetDown(OVRInput.RawButton.B) && other.tag == "Key") {
             hasTheKey = true;
             Destroy(other.gameObject);
             audioSource.PlayOneShot(keySFX, .55f);
