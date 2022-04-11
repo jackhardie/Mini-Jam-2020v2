@@ -13,12 +13,6 @@ public class screamAudio : MonoBehaviour
         //animationSoundPlayer = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void scream()
     {
         animationSoundPlayer.PlayOneShot(screamSFX, .86f);
