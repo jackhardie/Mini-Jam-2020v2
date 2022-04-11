@@ -21,7 +21,7 @@ public class ShadowAI : MonoBehaviour {
 
     void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        target = FindObjectOfType<FirstPersonController>().transform;
+        target = FindObjectOfType<OVRPlayerController>().transform;
         deathHandler = FindObjectOfType<DeathHandler>();
     }
 
