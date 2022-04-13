@@ -778,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 5698182489254889831, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
       propertyPath: doorPrompt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1247950686}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c0dea0adad4fc4bb7f07ef092bee67, type: 3}
 --- !u!1001 &245365245
@@ -1692,6 +1692,10 @@ PrefabInstance:
       propertyPath: flashlightSFX
       value: 
       objectReference: {fileID: 2020763191}
+    - target: {fileID: 6650728174301711211, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: lightChecker
+      value: 
+      objectReference: {fileID: 3915487317115600337}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
 --- !u!1001 &542608753
@@ -3588,6 +3592,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1247950686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7440148357812712949, guid: 618ade3c7cedb664fa07af6bb3e1471f, type: 3}
+  m_PrefabInstance: {fileID: 1247950683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1322921332
 GameObject:
   m_ObjectHideFlags: 0
