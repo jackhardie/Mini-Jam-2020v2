@@ -32,10 +32,10 @@ public class SceneHandler : MonoBehaviour {
     }
 
     public void MainMenu() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); //TBD
     }
     public void TutorialLevel() {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("VRTutorial");
     }
 
     public void RestartLevel() {
