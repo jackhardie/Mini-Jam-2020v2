@@ -7,7 +7,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class DeathHandler : MonoBehaviour {
 
     SanityManager sanityManager;
-    FirstPersonController player;
+    OVRPlayerController player;
     public GameObject cameraPlayer;
     public GameObject shadowSelf;
     public AudioSource audiosource;
@@ -35,7 +35,7 @@ public class DeathHandler : MonoBehaviour {
     void Start() {
         isDead = false;
         sanityManager = GetComponent<SanityManager>();
-        player = FindObjectOfType<FirstPersonController>();
+        player = FindObjectOfType<OVRPlayerController>();
 
     }
 

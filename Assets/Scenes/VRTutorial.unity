@@ -9176,14 +9176,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 743602493, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1288400515, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: flashlightSFX
       value: 
       objectReference: {fileID: 865573868}
+    - target: {fileID: 2033094698, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 77e46643d317d7c43aba364d731196cc, type: 2}
     - target: {fileID: 1657974233044222801, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: scriptedEvent
       value: 
       objectReference: {fileID: 2044051219}
+    - target: {fileID: 1657974233044222815, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6650728174301711211, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: lightChecker
       value: 
